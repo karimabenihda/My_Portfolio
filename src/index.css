@@ -1,0 +1,36 @@
+img{
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 140px;
+  height: 110px;
+  position: Absolute;
+  
+}
+#linkden_button{
+  border-radius: 30px;
+  padding: 17px;
+  margin-top: 37px;
+  border: none;
+  background-color:#feb7c3 ;
+  color:  #ffff;
+font-weight: bold;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#linkden_button:hover{
+ color :#feb7c3 ;
+ border: #ddd 1px solid;
+  background-color:  #ffff;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+
+
+}
+
+nav{
+  margin :37px;
+  justify-content: space-between;
+}
