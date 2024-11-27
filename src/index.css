@@ -2,35 +2,115 @@ img{
   left: 0;
   top: 0;
   margin: 0;
-  width: 140px;
+  padding: 0;
+  width: 160px;
   height: 110px;
   position: Absolute;
   
 }
-#linkden_button{
+.nav-link{
+  position: relative;
+  color:#2A3C59;
+  
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #feb7c3;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+.linkden_cv_button {
   border-radius: 30px;
   padding: 17px;
   margin-top: 37px;
   border: none;
-  background-color:#feb7c3 ;
-  color:  #ffff;
-font-weight: bold;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  background-color: #feb7c3;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-#linkden_button:hover{
- color :#feb7c3 ;
- border: #ddd 1px solid;
-  background-color:  #ffff;
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
-
-
+.linkden_cv_button:hover {
+  transform: translateY(22px); 
+  background-color: #fff;
+  color: #feb7c3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-nav{
-  margin :37px;
+
+
+.nav{
+  margin :37px; 
+ top: 0;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
+
+@media (min-width: 751px){
+  .nav-items{
+    display: flex; 
+  }
+    .nav-items:hover{
+      display: flex;
+      background-color: #feb7c3;
+    }
+  .menu-icon {
+    display: none;
+  }
+}
+
+
+@media (max-width: 751px) {
+  .nav-items {
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    width: 150px;
+    border: 1px solid #ddd;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+
+  .nav-items.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .menu-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 35px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon:hover {
+    transform: rotate(90deg);
+  }
+}
+
+

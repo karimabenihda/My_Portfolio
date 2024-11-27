@@ -13,8 +13,10 @@ function App() {
   return (
     <>
       <Router>
-    <Navbar/>
-        <Routes>
+      <Navbar style={{ position: 'sticky', top: '0', zIndex: '1000' }} />
+      <br />
+      <br />
+      <Routes>
         <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>

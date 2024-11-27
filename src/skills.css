@@ -1,0 +1,68 @@
+.progress-bar {
+    height: 20px;
+    width: 75%;
+    border-radius: 5px;
+    background-color:#feb7c3;
+}
+.drop_right:hover{
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+
+}
+.drop_right{
+  margin-top:12px ;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #dddd;
+    border-radius: 5px;
+}
+.percentage {
+    text-align: right;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: -22px;
+    right:0 ;
+    z-index: 2; 
+}
+ .skill {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+padding :0;
+  padding-top: 30px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+ul.visible {
+    opacity: 1;
+    max-height: 500px; 
+  }
+  
+
+  .dropdown-icon {
+    transition: transform 0.3s ease;
+    margin-top: 12px;
+  }
+  
+  .dropdown-icon.rotated {
+    transform: rotate(90deg);
+  }
+  
+
+
+
+
