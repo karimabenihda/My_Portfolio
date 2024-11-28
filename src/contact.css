@@ -72,4 +72,16 @@
   .item:hover {
     transform: translateX(10px);
   }
+  .item {
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item:active {
+    background-color: #e0e0e0;
+  }
   
