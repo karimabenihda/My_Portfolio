@@ -71,14 +71,10 @@
   
   .item:hover {
     transform: translateX(10px);
+    transition: background-color 0.3s ease;
   }
   .item {
     cursor: pointer;
-  }
-  
-  .item:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease;
   }
   
   .item:active {

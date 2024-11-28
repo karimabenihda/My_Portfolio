@@ -23,12 +23,13 @@ function Contact() {
         <li className='item' onClick={() => copyToClipboard('+212 675600489')}>
           <FaPhoneAlt className='icon' /> +212 675600489
         </li>
-        <li className='item' onClick={() => copyToClipboard('karimabenihda@gmail.com')}>
-          <MdOutlineEmail className='icon' /> karimabenihda@gmail.com
+        <li className='item' >
+          <MdOutlineEmail className='icon' />
+          <a href="mailto:karimabenihda@gmail.com" style={{color:'#feb7c3',textDecoration:'none'}} target="_blank" rel="noopener noreferrer">karimabenihda@gmail.com</a> 
         </li>
         <li className='item'>
           <FaGithub className='icon' /> 
-          <a href="https://github.com/karimabenihda" className='link' style={{color:'#feb7c3'}}>github.com/karimabenihda</a>
+          <a href="https://github.com/karimabenihda" className='link' style={{color:'#feb7c3'}} target="_blank" rel="noopener noreferrer">github.com/karimabenihda</a>
         </li>
       </ol>
     </div>
