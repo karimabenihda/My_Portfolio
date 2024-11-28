@@ -39,7 +39,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 20px;
-padding :0;
+  padding :0;
   padding-top: 30px;
   opacity: 0;
   max-height: 0;
@@ -62,7 +62,9 @@ ul.visible {
     transform: rotate(90deg);
   }
   
+    .desc{
+      justify-content: center;
+      margin-inline:90px;
 
-
-
+    }
 

@@ -31,7 +31,7 @@ function Skills() {
 
       <div className='Languages'>
         <h3 style={{ fontSize: '35px' }}>Hard Skills</h3>
-        <p>Here are the technical skills I’ve mastered, ranging from programming languages to web development frameworks and tools I use in my projects.</p>
+        <p className='desc'>Here are the technical skills I’ve mastered, ranging from programming languages to web development frameworks and tools I use in my projects.</p>
         
         <span style={{ display: 'flex' }}>
           <h3>Languages</h3>

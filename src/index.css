@@ -46,7 +46,7 @@ li{
 }
 
 .linkden_cv_button:hover {
-  transform: translateY(22px); 
+  transform: translate(5px); 
   background-color: #fff;
   color: #feb7c3;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -68,7 +68,6 @@ li{
   }
     .nav-items:hover{
       display: flex;
-      background-color: #feb7c3;
     }
   .menu-icon {
     display: none;
@@ -112,5 +111,34 @@ li{
     transform: rotate(90deg);
   }
 }
+
+ol li {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+ol li:hover {
+  transform: translateX(10px);
+}
+
+.flech_icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+p:hover .flech_icon {
+  transform: rotate(53deg);
+}
+
+
+
+p:hover {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+
+}
+
+
 
 

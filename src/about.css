@@ -1,0 +1,70 @@
+
+  
+  .title {
+    font-weight: bold;
+    font-size: 50px;
+    color: #feb7c3;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    font-size: 19px;
+    line-height: 35px;
+    margin: 20px;
+    color: #2A3C59;
+    text-align: left;
+  }
+  
+  .education-list li {
+    align-items: center;
+    background-color: #FFE0E6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Poppins', sans-serif;
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+ 
+  .cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #feb7c3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    transform: scale(1.05); 
+    background-color: #fff;
+    color: #ff8fb2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .download-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 24px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
