@@ -1,6 +1,6 @@
-import React, { useState } from 'react'; 
+import React from 'react'; 
 import { IoLogoJavascript } from "react-icons/io5";
-import { IoLogoHtml5, IoMdArrowDropright  } from "react-icons/io";
+import { IoLogoHtml5, IoMdArrowDropright } from "react-icons/io";
 import { FaCss3Alt, FaReact, FaPython, FaPhp, FaBootstrap } from "react-icons/fa";
 import { TbBrandLaravel } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -10,19 +10,6 @@ import { SiMysql, SiMongodb } from "react-icons/si";
 import './skills.css';
 
 function Skills() {
-  const [isVisible, setIsVisible] = useState({
-    languages: false,
-    webDevelopment: false,
-    databases: false
-  });
-
-  function handleClick(section) {
-    setIsVisible(prevState => ({
-      ...prevState,
-      [section]: !prevState[section]
-    }));
-  }
-
   return (
     <div className='container'>
       <div className='text-center' style={{ color: "#feb7c3", fontWeight: 'bold', fontSize: '53px', fontStyle: "normal", fontFamily: 'arial,sans-serif' }}>
@@ -33,12 +20,8 @@ function Skills() {
         <h3 style={{ fontSize: '35px' }}>Hard Skills</h3>
         <p className='desc'>Here are the technical skills I’ve mastered, ranging from programming languages to web development frameworks and tools I use in my projects.</p>
         
-        <span style={{ display: 'flex' }}>
-          <h3>Languages</h3>
-          <IoMdArrowDropright className={`dropdown-icon ${isVisible.languages ? 'rotated' : ''}`}
- onClick={() => handleClick('languages')} style={{ cursor: 'pointer' }} />
-        </span>
-        <ul className={isVisible.languages ? 'visible' : ''}>
+        <h3>Languages</h3>
+        <ul>
           <li className='skill'>
             <span><FaPhp style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
@@ -74,12 +57,8 @@ function Skills() {
       </div>
 
       <div className="web_development">
-        <span style={{ display: 'flex' }}>
-          <h3>Web Development</h3>
-          <IoMdArrowDropright className={`dropdown-icon ${isVisible.webDevelopment ? 'rotated' : ''}`}   
-  onClick={() => handleClick('webDevelopment')} style={{ cursor: 'pointer' }} />
-        </span>
-        <ul className={isVisible.webDevelopment ? 'visible' : ''}>
+        <h3>Web Development</h3>
+        <ul>
           <li className='skill'>
             <span><FaReact style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
@@ -115,12 +94,8 @@ function Skills() {
       </div>
 
       <div className="Databases">
-        <span style={{ display: 'flex' }}>
-          <h3>Databases</h3>
-          <IoMdArrowDropright className={`dropdown-icon ${isVisible.databases ? 'rotated' : ''}`}   
-  onClick={() => handleClick('databases')} style={{ cursor: 'pointer' }} />
-        </span>
-        <ul className={isVisible.databases ? 'visible' : ''}>
+        <h3>Databases</h3>
+        <ul>
           <li className='skill'>
             <span><SiMysql style={{ height: '45px', width: '50px',marginTop:'-10' }} /></span>
             <div className='progress-container'>
