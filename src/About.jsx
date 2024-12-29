@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from "react-icons/fa";
 import { LuFlower } from "react-icons/lu";
 import { CiLocationArrow1 } from "react-icons/ci";
-import cv from '/CV_Karima_Benihda.pdf';
+import cv from '/CV_Karima_BENIHDA.pdf';
 import './about.css'; 
 
 function About() {
@@ -32,8 +32,8 @@ function About() {
         <p><b><CiLocationArrow1 className='flech_icon'/> Location: </b>Ait Melloul Agadir, Morocco.</p>
         <p><b><CiLocationArrow1 className='flech_icon'/> Education: </b></p>
         <ol className='education-list'>
-          <li><LuFlower style={{width:'22px',height:'22px'}}/> <b>2022-2023:</b> Graduated from Albakkali High School, specializing in Life and Earth Sciences "SVT," with a 'Bien' distinction.</li>
           <li><LuFlower style={{width:'22px',height:'22px'}}/> <b>2023-2025:</b> I am a graduate of OFPPT Ait Melloul, specializing in Digital Development, Full Stack Web option.</li>
+          <li><LuFlower style={{width:'22px',height:'22px'}}/> <b>2022-2023:</b> Graduated from Albakkali High School, specializing in Life and Earth Sciences "SVT," with a 'Bien' distinction.</li>
         </ol>
         <a className='cv-button' href={cv} download>
           <FaDownload className='download-icon' /> Download CV
