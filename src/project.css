@@ -15,9 +15,7 @@
     border:1px solid #ff8fb2;
     margin-inline: -10px;
   }
-  h3:hover{
-
-  }
+  
   .project-card {
     border-radius: 12px;
     padding: 20px;
@@ -55,7 +53,9 @@
     color: #ffff;
     margin-bottom: 10px;
     line-height: 1.6;
+
   }
+  
   
   /* .project-link {
    

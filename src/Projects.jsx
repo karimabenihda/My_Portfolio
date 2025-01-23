@@ -43,7 +43,7 @@ const projectData = [
         {projectData.map((project, index) => (
           <div className='project-card' key={index}>
             {/* <img src={project.image} alt={project.name} className='project-image' /> */}
-            <h3 style={{color:"#ff8fb2"}}>{project.name}</h3><hr />
+            <h4 style={{color:"#ff8fb2"}}>{project.name}</h4><hr />
             <p>{project.description}</p>
             <p><strong >Language:</strong> <span style={{color:"#ff8fb2"}}>{project.language}</span></p>
             <span><a href={project.site} target='_blank' rel='noopener noreferrer' className='project-link'> <FaEye/> Open Website
