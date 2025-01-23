@@ -4,60 +4,123 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Karima Benihda</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Sevillana&display=swap');
-      </style>
+      body {
+        background-color: black;
+        color: aliceblue;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      }
+
+      /* Full-screen particle container */
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1; /* Ensures it stays in the background */
+      }
+
+      /* Main content styling */
+      #root {
+        position: relative;
+        z-index: 1; /* Ensures it's above the particles */
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Example content */
+      .section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+      }
+
+      .section h2 {
+        margin-top: 0;
+      }
+    </style>
   </head>
-  <body style="background: linear-gradient(135deg, #f8e6ea, #ffffff);">
-    <div class="header finisher-header" style="width: 100%; height: 300px;">
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
+  <body>
+    <!-- Particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Main content -->
     <div id="root"></div>
+    
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
-  </div>
-  <script type="text/javascript">
-    new FinisherHeader({
-      "count": 96,
-      "size": {
-        "min": 1,
-        "max": 7,
-        "pulse": 0.1
-      },
-      "speed": {
-        "x": {
-          "min": 0,
-          "max": 0.4
-        },
-        "y": {
-          "min": 0,
-          "max": 0.6
-        }
-      },
-      "colors": {
-        "background": "#201e30",
-        "particles": [
-          "#fbfcca",
-          "#d7f3fe",
-          "#ffd0a7"
-        ]
-      },
-      "blending": "overlay",
-      "opacity": {
-        "center": 1,
-        "edge": 0
-      },
-      "skew": -2,
-      "shapes": [
-        "c"
-      ]
-    });
-    </script>    
-  </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#feb7c3",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+            },
+            opacity: {
+              value: 0.5,
+            },
+            size: {
+              value: 3,
+              random: true,
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#feb7c3",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+            },
+          },
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 import React from 'react';
 import './project.css'
+import { FaEye } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 function Projects() {
 const projectData = [
@@ -36,15 +38,17 @@ const projectData = [
 
   return (
     <div className='container'>
-      <h2 className='title'>My Projects</h2>
+      <h2 className='title'>My Projects</h2><br /><br />
       <div className='projects-grid'>
         {projectData.map((project, index) => (
           <div className='project-card' key={index}>
             {/* <img src={project.image} alt={project.name} className='project-image' /> */}
-            <h3>{project.name}</h3>
+            <h3 style={{color:"#ff8fb2"}}>{project.name}</h3><hr />
             <p>{project.description}</p>
-            <p><b>Language:</b> {project.language}</p>
-            <a href={project.link} target='_blank' rel='noopener noreferrer' className='project-link'>View on GitHub</a>
+            <p><strong >Language:</strong> <span style={{color:"#ff8fb2"}}>{project.language}</span></p>
+            <span><a href={project.site} target='_blank' rel='noopener noreferrer' className='project-link'> <FaEye/> Open Website
+            </a>
+            <a href={project.link} target='_blank' rel='noopener noreferrer' className='project-link'> <FaGithub/> View on GitHub</a></span>
           </div>
         ))}
       </div>

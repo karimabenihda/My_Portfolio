@@ -12,27 +12,27 @@ import './skills.css';
 function Skills() {
   return (
     <div className='container'>
-      <div className='text-center' style={{ color: "#feb7c3", fontWeight: 'bold', fontSize: '53px', fontStyle: "normal", fontFamily: 'arial,sans-serif' }}>
+      <div className='text-center title' style={{ color: "#ff8fb2", fontWeight: 'bold', fontSize: '90px', fontStyle: "normal", fontFamily: '' }}>
         My Skills
-      </div>
+      </div><br /><br/>
 
       <div className='Languages'>
-        <h3 style={{ fontSize: '35px' }}>Hard Skills</h3>
+        <h3 style={{ fontSize: '35px', color:"#fae6e9"}}>Hard Skills</h3><br />
         <p className='desc'>Here are the technical skills I’ve mastered, ranging from programming languages to web development frameworks and tools I use in my projects.</p>
-        
+        <br />
         <h3>Languages</h3>
         <ul>
           <li className='skill'>
             <span><FaPhp style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "80%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "80%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">80%</div>
             </div>
           </li>
           <li className='skill'>
             <span><IoLogoJavascript style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
             </div>
           </li>
@@ -42,14 +42,14 @@ function Skills() {
               <FaCss3Alt style={{ height: '30px', width: '43px' }} />
             </span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "90%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "90%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">90%</div>
             </div>
           </li>
           <li className='skill'>
             <span><FaPython style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "50%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "50%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">50%</div>
             </div>
           </li>
@@ -62,14 +62,14 @@ function Skills() {
           <li className='skill'>
             <span><FaReact style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
             </div>
           </li>
           <li className='skill'>
             <span><TbBrandLaravel style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
             </div>
           </li>
@@ -79,14 +79,14 @@ function Skills() {
               <RiTailwindCssFill style={{ height: '30px', width: '43px' }} />
             </span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "90%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "90%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">90%</div>
             </div>
           </li>
           <li className='skill'>
             <span><FaVuejs style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
             </div>
           </li>
@@ -99,14 +99,14 @@ function Skills() {
           <li className='skill'>
             <span><SiMysql style={{ height: '45px', width: '50px',marginTop:'-10' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "75%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "75%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">75%</div>
             </div>
           </li>
           <li className='skill'>
             <span><SiMongodb style={{ height: '30px', width: '43px' }} /></span>
             <div className='progress-container'>
-              <div className="progress-bar" style={{ width: "80%", backgroundColor: '#feb7c3' }}></div>
+              <div className="progress-bar" style={{ width: "80%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">80%</div>
             </div>
           </li>

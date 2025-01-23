@@ -1,9 +1,7 @@
-
-  
   .title {
     font-weight: bold;
     font-size: 50px;
-    color: #feb7c3;
+    color: #ff8fb2;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
   }
@@ -12,28 +10,38 @@
     font-size: 19px;
     line-height: 35px;
     margin: 20px;
-    color: #2A3C59;
+    color: #fff;
     text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
+
   }
   
   .education-list li {
+    display: flex;
     align-items: center;
-    background-color: #FFE0E6;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     font-family: 'Poppins', sans-serif;
+    list-style: none; /* Remove default list styling */
   }
+  
+  .education-list li b {
+    margin-left: 10px; /* Add space between icon and text */
+  }
+  
   .description {
     margin-bottom: 20px;
   }
+  
  
-  .cv-button {
+  /* .cv-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #feb7c3;
+    background-color: #ff8fb2;
     color: white;
     font-weight: bold;
     border: none;
@@ -49,8 +57,43 @@
     color: #ff8fb2;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   
-  }
-  
+  } */
+
+  .cv-button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 37px;
+    border: #ff8fb2 2px solid;
+    color: #ffff;
+    text-decoration: none;
+    /* background-color: #fff; */
+    margin :44px;   
+    /* hna fin 9adit lbutton */
+    box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
+
+}
+
+/* @media (max-width: 500px) {
+  .education-list{
+display: wrap;  
+}
+} */
+
+
+.cv-button:hover {
+    color: #fff;
+    background-color: #ff8fb2;
+    transition: all 0.2s ease-in-out;
+    scale: 1.05;
+    box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
+
+    /* text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
+
+}
   .download-icon {
     margin-right: 8px;
     vertical-align: middle;

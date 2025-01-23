@@ -1,45 +1,70 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import from react-scroll
 import karima from '/karima.png';
 import { IoMenu } from "react-icons/io5";
 import './index.css';
-
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const handleDarkModeChange = () => {
-      const isDark = document.body.classList.contains('darkmode--activated');
-      setIsDarkMode(isDark);
-    };
-
-    handleDarkModeChange();
-    const observer = new MutationObserver(handleDarkModeChange);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-
-    return () => observer.disconnect();
-  }, []);
 
   function toggleMenu() {
     setIsMenuOpen(prevState => !prevState);
   }
 
   return (
-    <div className="container" style={{ marginBottom: '40px' }}>
-      <nav className={`nav justify-content-center ${isDarkMode ? 'dark-nav' : ''}`}>
-        <Link className="navbar-brand" to="/">
-          <img src={isDarkMode ? '/karima-white.png' : karima} alt="Karima" />
-        </Link>
+    <div className="container" style={{ marginBottom: '20px' ,position: 'sticky', top: '0px', zIndex: '1'}} >
+      <nav className={`nav justify-content-center `} style={{border:'1px solid black',borderRadius:"20px",background:'black',marginBottom: '-30px'}}>
+        <ScrollLink className="navbar-brand" to="home" smooth={true} duration={500}>
+          <img src={'/karima.png'} alt="Karima" className='karima' style={{marginTop: '-60px',marginLeft: '-43px'  }}/>
+        </ScrollLink>
 
         <div className={`nav-items ${isMenuOpen ? 'active' : ''}`}>
-          <Link className="nav-link active" to="/" style={{ color: isDarkMode ? 'white' : '#2A3C59', fontWeight: 'bold', fontStyle: 'normal' }}>Home</Link>
-          <Link className="nav-link" to="/about" style={{ color: isDarkMode ? 'white' : '#2A3C59', fontWeight: 'bold', fontStyle: 'normal' }}>About me</Link>
-          <Link className="nav-link" to="/skills" style={{ color: isDarkMode ? 'white' : '#2A3C59', fontWeight: 'bold', fontStyle: 'normal' }}>Skills</Link>
-          <Link className="nav-link" to="/projects" style={{ color: isDarkMode ? 'white' : '#2A3C59', fontWeight: 'bold', fontStyle: 'normal' }}>Projects</Link>
-          <Link to="/contact" className="nav-link" style={{ color: isDarkMode ? 'white' : '#2A3C59', fontWeight: 'bold', fontStyle: 'normal' }}>Contact</Link>
+          <ScrollLink
+            className="nav-link active"
+            to="home"
+            smooth={true}
+            duration={500}
+            style={{ color: '#fff',backgroundColor:'black ', fontWeight: 'bold', fontStyle: 'normal' }}
+          >
+            Home
+          </ScrollLink>
+          <ScrollLink
+            className="nav-link"
+            to="about"
+            smooth={true}
+            duration={500}
+            style={{ color: '#fff',backgroundColor:'black ', fontWeight: 'bold', fontStyle: 'normal' }}
+          >
+            About Me
+          </ScrollLink>
+          <ScrollLink
+            className="nav-link"
+            to="skills"
+            smooth={true}
+            duration={500}
+            style={{ color: '#fff',backgroundColor:'black ', fontWeight: 'bold', fontStyle: 'normal' }}
+          >
+            Skills
+          </ScrollLink>
+          <ScrollLink
+            className="nav-link"
+            to="projects"
+            smooth={true}
+            duration={500}
+            style={{ color: '#fff',backgroundColor:'black ', fontWeight: 'bold', fontStyle: 'normal' }}
+          >
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            className="nav-link"
+            to="contact"
+            smooth={true}
+            duration={500}
+            style={{ color: '#fff',backgroundColor:'black ', fontWeight: 'bold', fontStyle: 'normal' }}
+          >
+            Contact
+          </ScrollLink>
         </div>
-        <IoMenu className="menu-icon" onClick={toggleMenu} />
+        <IoMenu className="menu-icon" onClick={toggleMenu} style={{color:'#fff',marginTop: '-5px',marginLeft: '-73px'  }}/>
       </nav>
     </div>
   );

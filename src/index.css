@@ -1,3 +1,8 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 img{
   left: 0;
   top: 0;
@@ -35,7 +40,7 @@ li{
 }
 
 
-.linkden_cv_button {
+/* .linkden_cv_button {
   border-radius: 30px;
   padding: 17px;
   margin-top: 37px;
@@ -44,14 +49,14 @@ li{
   color: #fff;
   font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
-.linkden_cv_button:hover {
+/* .linkden_cv_button:hover {
   transform: translate(5px); 
   background-color: #fff;
   color: #feb7c3;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 
@@ -77,6 +82,7 @@ li{
 
 
 @media (max-width: 860px) {
+ 
   .nav-items {
     opacity: 0;
     visibility: hidden;
@@ -130,6 +136,7 @@ ol li:hover {
 
 p:hover .flech_icon {
   transform: rotate(53deg);
+
 }
 
 

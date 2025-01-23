@@ -1,0 +1,32 @@
+
+.linkden_button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 37px;
+    border: #ff8fb2 2px solid;
+    color: #fff;
+    background-color: #ff8fb2;
+    text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
+
+    
+}
+
+.linkden_button:hover {
+    background-color: #fff;
+    color: #ff8fb2;
+    transition: all 0.2s ease-in-out;
+    scale: 1.05;
+    /* box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
+    box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
+
+    /* text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
+
+}
+
+.title{
+    line-height: 20px;
+}
