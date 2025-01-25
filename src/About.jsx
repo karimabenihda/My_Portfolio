@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from "react-icons/fa";
 import { LuFlower } from "react-icons/lu";
 import { CiLocationArrow1 } from "react-icons/ci";
-import cv from '/CV_Karima_BENIHDA.pdf';
+import cv from './CV_Karima_BENIHDA.pdf';
 import './about.css'; 
 
 function About() {
