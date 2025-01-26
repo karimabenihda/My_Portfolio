@@ -23,14 +23,14 @@ function Skills() {
         <h3>Languages</h3>
         <ul>
           <li className='skill'>
-            <span><FaPhp style={{ height: '30px', width: '43px' }} /></span>
+            <span><FaPhp style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "80%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">80%</div>
             </div>
           </li>
           <li className='skill'>
-            <span><IoLogoJavascript style={{ height: '30px', width: '43px' }} /></span>
+            <span><IoLogoJavascript style={{ height: '42px', width: '42px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
@@ -38,8 +38,8 @@ function Skills() {
           </li>
           <li className='skill'>
             <span style={{ display: 'flex', marginLeft: '-43px' }}>
-              <IoLogoHtml5 style={{ height: '30px', width: '43px' }} />
-              <FaCss3Alt style={{ height: '30px', width: '43px' }} />
+              <IoLogoHtml5 style={{ height: '40px', width: '40px' }} />
+              <FaCss3Alt style={{ height: '40px', width: '40px' }} />
             </span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "90%", backgroundColor: '#ff8fb2' }}></div>
@@ -47,7 +47,7 @@ function Skills() {
             </div>
           </li>
           <li className='skill'>
-            <span><FaPython style={{ height: '30px', width: '43px' }} /></span>
+            <span><FaPython style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "50%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">50%</div>
@@ -60,14 +60,14 @@ function Skills() {
         <h3>Web Development</h3>
         <ul>
           <li className='skill'>
-            <span><FaReact style={{ height: '30px', width: '43px' }} /></span>
+            <span><FaReact style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
             </div>
           </li>
           <li className='skill'>
-            <span><TbBrandLaravel style={{ height: '30px', width: '43px' }} /></span>
+            <span><TbBrandLaravel style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
@@ -75,8 +75,8 @@ function Skills() {
           </li>
           <li className='skill'>
             <span style={{ display: 'flex', marginLeft: '-43px' }}>
-              <FaBootstrap style={{ height: '30px', width: '43px' }} />
-              <RiTailwindCssFill style={{ height: '30px', width: '43px' }} />
+              <FaBootstrap style={{ height: '40px', width: '40px' }} />
+              <RiTailwindCssFill style={{ height: '40px', width: '40px' }} />
             </span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "90%", backgroundColor: '#ff8fb2' }}></div>
@@ -84,7 +84,7 @@ function Skills() {
             </div>
           </li>
           <li className='skill'>
-            <span><FaVuejs style={{ height: '30px', width: '43px' }} /></span>
+            <span><FaVuejs style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "70%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">70%</div>
@@ -104,7 +104,7 @@ function Skills() {
             </div>
           </li>
           <li className='skill'>
-            <span><SiMongodb style={{ height: '30px', width: '43px' }} /></span>
+            <span><SiMongodb style={{ height: '40px', width: '40px' }} /></span>
             <div className='progress-container'>
               <div className="progress-bar" style={{ width: "80%", backgroundColor: '#ff8fb2' }}></div>
               <div className="percentage">80%</div>

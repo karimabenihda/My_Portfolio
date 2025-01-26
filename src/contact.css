@@ -1,29 +1,26 @@
-.container {
-    text-align: center;
-    animation: fadeIn 1.5s ease-in-out;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   
   .title {
     color: #ff8fb2;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
+    margin-left: -14px;
     transition: transform 0.3s ease;
     color: #fff;
-    /* background-color: #ff8fb2; */
+  }
   
-  }
-  ol{
-    display: flex;
-    justify-content: center;
-  }
+
   .subtitle {
     color: #fff;
-    font-weight: bold;
-    font-size: 53px;
+    font-size: 26px;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 40px;
+    text-align: center;
   }
   
   .highlight {
@@ -53,33 +50,179 @@
   
  
   .container:hover .title {
-    transform: scale(1.05);
-  }
+    transition: all 0.2s ease-in-out;
   
+  }
+  ol{
+    display: flex;
+    margin-left:-10px ;
+  }
+
   .icon {
-    margin-right: 10px;
     font-size: 25px;
     vertical-align: middle;
-    height: 50px;
-    width: 50px;
-    margin: 50px;
+    height: 53px;
+    width: 53px;
+    margin-inline: 22px;
+    margin-left:-10px ;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 30px;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
    /* transition: transform 0.3s ease; */
    transition: all 0.3s ease-in-out;
    animation: fadeIn 0.5s ease-in-out;
 
   } 
+
+.item{
+  padding: 10px;
+}
+
   .icon:hover {
     transition: all 0.2s ease-in-out;
-    scale: 1.05; 
     box-shadow: 1px 1px 8px #ff8fb2, -1px -1px 8px #ff8fb2;
-  
   }
    
   .highlight:hover {
       color: #feb7c3;
     }
- 
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      padding: 20px;
+    }
+    .container1 {
+  max-width: 1200px;
+  margin: 0 auto;    
+  padding: 0 20px;   
+}
+
+
+
+  .all {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the sections */
+  margin: 0 auto;
+  width: 80%; /* Limit the overall width */
+}
+    
+.aside1, .aside2 {
+  flex: 1; /* Equal width for both sections */
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+  .all {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center sections */
+  }
+
+  .aside1, .aside2 {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Add some vertical space */
+  }
+}
+
+
+    
+    form {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      height: auto; /* Full viewport height */
+      padding: 0;
+      margin: 0;
+    }
+    .send{
+      margin: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+  border: #ff8fb2 2px solid;
+  color: #fff;
+  background-color: #ff8fb2;
+}
+.send:hover{
+  background-color: #fff;
+  color: #ff8fb2;
+  transition: all 0.2s ease-in-out;
+  scale: 1.05;
+  border: 10px;
+  box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
+  margin-bottom:12px ;
+}
+.form-label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.form-label textarea {
+  resize: vertical;
   
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-inline:80px;
+  margin: 5px;
+
+}
+
+.form-label input,
+.form-label textarea {
+  width: 100%; /* Take the full width of the label */
+  padding: 13px;
+  padding-left: 50px; /* Ensure space for the icon */
+  border: 1px solid #ff8fb2;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.form-label input:focus,
+.form-label textarea:focus{
+  background-color: rgba(255, 255, 255, 0.17);
+  color: aliceblue;
+  box-shadow: 1px 1px 10px aliceblue, -1px -1px 10px aliceblue;
+
+}
+.form-label input::placeholder,
+.form-label textarea::placeholder{
+  color: #ddd;
+
+}
+.form-label textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-icon {
+  position: absolute;
+  left: 10px; /* Position icon inside input/textarea */
+  width: 24px;
+  height: 24px;
+  fill: #ff8fb2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

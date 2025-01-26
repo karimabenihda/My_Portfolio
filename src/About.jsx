@@ -31,18 +31,13 @@ function About() {
         <p><b><CiLocationArrow1 className='flech_icon' style={{color:'#ff8fb2'}}/> Date of Birth: </b>June 20, 2004.</p>
         <p><b><CiLocationArrow1 className='flech_icon' style={{color:'#ff8fb2'}}/> Location: </b>Ait Melloul Agadir, Morocco.</p>
         <p><b><CiLocationArrow1 className='flech_icon' style={{color:'#ff8fb2'}}/> Education: </b></p>
-        {/* <ol className='education-list'>
-          <li><LuFlower style={{width:'22px',height:'22px',color:'#ff8fb2'}}/> <b>2023-2025:</b> I am a graduate of OFPPT Ait Melloul, specializing in Digital Development, Full Stack Web option.</li><br/>
-
-          <li><LuFlower style={{width:'22px',height:'22px',color:'#ff8fb2'}}/> <b>2022-2023:</b> Graduated from Albakkali High School, specializing in Life and Earth Sciences "SVT," with a 'Bien' distinction.</li>
-        </ol> */}
-        
+      
           <ul style={{marginBottom:'50px'}}>
           <li><LuFlower style={{width:'22px',height:'22px',color:'#ff8fb2'}}/>  <b>2023-2025:</b> I am a graduate of OFPPT Ait Melloul, specializing in Digital Development, Full Stack Web option.</li><br/>
           <li><LuFlower style={{width:'22px',height:'22px',color:'#ff8fb2'}}/>  <b>2022-2023:</b> Graduated from Albakkali High School, specializing in Life and Earth Sciences "SVT," with a 'Bien' distinction.</li>
         </ul>
         <a className='cv-button' href={cv} download>
-          <FaDownload className='download-icon' /> Download Resume
+          <FaDownload className='download-icon' />Download Resume
         </a><br /><br />
       </div>
     </div>

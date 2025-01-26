@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     
-      <Navbar style={{marginTop:'-110px' ,backgroundColor:'black' ,border:'1px solid black',borderRadius:"20px"}}/>
-      <Element name="home" style={{marginBlock:"100px",marginBottom:'200px'}}>
+      <Navbar style={{marginTop:'-110px' ,backgroundColor:'black' ,border:'1px solid black',borderRadius:"20px"}}/><br/><br /><br/><br />
+      <Element name="home" style={{marginBottom:'200px'}}>
         <Home /><br /><br />
       </Element>
       <Element name="about"style={{marginBlock:"100px"}}>

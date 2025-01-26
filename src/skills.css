@@ -42,6 +42,8 @@ h3:hover{
 .skill span {
   margin-right: 20px;
   font-size: 35px;
+  border-radius: 50px 50px;
+ 
 }
 
 *{
@@ -69,8 +71,10 @@ h3:hover{
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     scale: 1.05;
-    box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
-    /* box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2; */
+    border-radius: 50px;
+    
+    /* box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
+    box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
 
 }
 

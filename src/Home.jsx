@@ -1,16 +1,16 @@
 import React, { useRef, useEffect, useState } from "react";
-import { TbZoom } from "react-icons/tb";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useSprings, animated } from "@react-spring/web";
 import './home.css';
+
 const Home = () => {
   const elements = [
-    { text: "Azul!", color: "#fff", fontSize: "20px", fontWeight: "bolder" ,    fontFamily: "Montserrat, sans-serif"},
-    { text: "I'm", color: "#fff", fontSize: "100px", fontWeight: "bolder",    fontFamily: "Montserrat, sans-serif"},
-    { text: "Karima BENIHDA", color: "#ff8fb2", fontSize: "100px", fontWeight: "bolder" ,    fontFamily: "Montserrat, sans-serif",textShadow: "1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2"},
-    { text: "Fullstack Web Developer", color: "#fff", fontSize: "30px", fontWeight: "bold",    fontFamily: "Montserrat ,sans-serif"},
+    { text: "Azul!  I'm", color: "#fff", fontSize: "40px", fontWeight: "bolder", fontFamily: "Montserrat, sans-serif" },
+    { text: "Karima BENIHDA", color: "#ff8fb2", fontSize: "85px", fontWeight: "bolder", fontFamily: "Montserrat, sans-serif", textShadow: "1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2" },
+    { text: "Fullstack Web Developer", color: "#fff", fontSize: "30px", fontWeight: "bold", fontFamily: "Montserrat, sans-serif" },
   ];
 
-  const buttonText = "View my Linkedin";
+  const buttonText = "More about me";
   const [inView, setInView] = useState(false);
   const ref = useRef();
 
@@ -31,7 +31,7 @@ const Home = () => {
       to: inView
         ? { opacity: 1, transform: "scale(1)" }
         : { opacity: 0, transform: "scale(0.8)" },
-      delay: elements.length * 200,
+      delay: elements.length * 100,
     },
   ]);
 
@@ -53,7 +53,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <div ref={ref} style={{margin:'-122px'}}>
+      <div ref={ref} style={{ margin: '-122px' }}>
         {springs.map((styles, index) => (
           <animated.div
             key={index}
@@ -63,25 +63,38 @@ const Home = () => {
               fontSize: elements[index].fontSize,
               fontWeight: elements[index].fontWeight,
               marginBottom: "10px",
-              textShadow:elements[index].textShadow
+              textShadow: elements[index].textShadow
             }}
           >
             {elements[index].text}
           </animated.div>
         ))}
         {buttonSpring.map((styles, index) => (
-          <animated.a
-            key={index}
-            href="https://www.linkedin.com/in/karima-benihda-3004ba326"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles}
-          >
-            <button className="linkden_button">
-              <TbZoom style={{ width:'30px',height:'25px'}} />
-              {buttonText}
-            </button>
-          </animated.a>
+          <div key={index} style={styles}>
+            <animated.a
+              href="https://www.linkedin.com/in/karima-benihda-3004ba326"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles}
+            >
+              <button className="linkden_button">
+                <FaLinkedin  style={{ width: '30px', height: '30px',marginRight:'8px' }} />
+                {buttonText}
+              </button>
+            </animated.a>
+            &nbsp; &nbsp;&nbsp;           &nbsp;
+
+            <animated.a
+              href="https://github.com/karimabenihda"
+              className='link'
+              style={{ color: '#feb7c3', marginLeft: '10px' }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className='icon' style={{width: '55px', height: '55px'}} />
+            </animated.a>
+          
+          </div>
         ))}
       </div>
     </div>

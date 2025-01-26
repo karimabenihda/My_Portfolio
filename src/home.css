@@ -10,7 +10,7 @@
     border: #ff8fb2 2px solid;
     color: #fff;
     background-color: #ff8fb2;
-    text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
+    /* text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
 
     
 }
@@ -20,13 +20,8 @@
     color: #ff8fb2;
     transition: all 0.2s ease-in-out;
     scale: 1.05;
-    /* box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
     box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
 
-    /* text-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff; */
-
 }
 
-.title{
-    line-height: 20px;
-}
+
