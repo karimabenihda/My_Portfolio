@@ -47,7 +47,7 @@
 /* Project Card Title Styling */
 .project-card h3 {
   color: #fff;
-  font-size: 24px;
+  font-size: 29px;
   margin-bottom: 10px;
 }
 
@@ -56,6 +56,7 @@
   color: #fff;
   margin-bottom: 10px;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 /* Project Link Styling */
@@ -77,7 +78,7 @@
 
 /* Icon and Text Styling for Project Link */
 .project-link .icon {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 .project-link .link-text {
@@ -103,7 +104,6 @@
   border-color: #fff;
   transform: scale(1.05);
   box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
-  
 }
 
 /* Responsive Design for Project Card */

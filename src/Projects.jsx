@@ -5,28 +5,32 @@ import { FaEye, FaGithub } from 'react-icons/fa';
 function Projects() {
   const projectData = [
     {
-      name: "React-App-ProductManagement",
-      description: "React app that uses Fetch API and radio buttons for filtering products by category and price.",
+      name: "ShopCatalogue",
+      description: "ShopCatalogue is a React digital catalogue that uses Fetch API and radio buttons for filtering products by category and price.",
       language: "JavaScript",
-      link: "https://github.com/karimabenihda/React-App-ProductManagement"
+      link: "https://github.com/karimabenihda/React-App-ProductManagement",
+      site:"https://shop-catalogue-sigma.vercel.app/"
     },
     {
       name: "Tkinter-Computer-Buying-App",
       description: "A Tkinter app for selecting a computer model and calculating discounts.",
       language: "Python",
-      link: "https://github.com/karimabenihda/Tkinter-Computer-Buying-App"
+      link: "https://github.com/karimabenihda/Tkinter-Computer-Buying-App",
+      site:'https://github.com/karimabenihda/Tkinter-Computer-Buying-App'
     },
     {
-      name: "store_authentification",
-      description: "User authentication for an online store.",
-      language: "JavaScript",
-      link: "https://github.com/karimabenihda/store_authentification"
+      name: "CLASSIK BMC",
+      description: "Digital platform developed by CLASSIK members for filling out the different sections of a Business Model Canvas (BMC).",
+      language: "React",
+      link: "https://github.com/karimabenihda/store_authentification",
+      site:"https://classic-bmc.vercel.app/"
     },
     {
-      name: "BookManager-PHP-CRUD",
-      description: "PHP CRUD app for book management with jQuery and AJAX.",
-      language: "PHP",
-      link: "https://github.com/karimabenihda/BookManager-PHP-CRUD"
+      name: "HappyDonut",
+      description: "Donuts Shoping Cart allows users to Browse donuts by category, add to cart, adjust quantities, and view total price for checkout",
+      language: "React ",
+      link: "https://github.com/karimabenihda/BookManager-PHP-CRUD",
+      site:'https://happy-donuts-store.vercel.app/'
     }
   ];
 

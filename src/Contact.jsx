@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdMessage } from "react-icons/md";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 import './contact.css';
 
@@ -39,6 +40,10 @@ function Contact() {
         </li>
         <li className='item'>
          <a href="https://github.com/karimabenihda" className='link' style={{color:'#feb7c3'}} target="_blank" rel="noopener noreferrer">           <FaGithub className='icon' /> 
+         </a> 
+        </li>
+        <li className='item'>
+         <a href="https://www.linkedin.com/in/karima-benihda-3004ba326/" className='link' style={{color:'#feb7c3'}} target="_blank" rel="noopener noreferrer">           <LiaLinkedinIn className='icon' /> 
          </a> 
         </li>
       </ol>
