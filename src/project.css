@@ -78,7 +78,7 @@
 
 /* Icon and Text Styling for Project Link */
 .project-link .icon {
-  transition: opacity 0.2s ease;
+  transition: opacity 0.01s ease;
 }
 
 .project-link .link-text {

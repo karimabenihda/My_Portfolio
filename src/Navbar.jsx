@@ -14,7 +14,8 @@ function Navbar() {
     <div className="container" style={{ marginBottom: '20px' ,position: 'sticky', top: '0px', zIndex: '1'}} >
       <nav className={`nav justify-content-center `} style={{borderRadius:"20px",backgroundColor:'black',marginBottom: '-30px',marginTop: '0px'}}>
         <ScrollLink className="navbar-brand" to="home" smooth={true} duration={500}>
-          <img src={'/karima.png'} alt="Karima" className='karima' style={{marginTop: '-50px',marginLeft: '-43px',zIndex: '1'}}/>
+        <img src={'/karima.png'} alt="Karima" className="karima" />
+
         </ScrollLink>
 
         <div className={`nav-items ${isMenuOpen ? 'active' : ''}`}>

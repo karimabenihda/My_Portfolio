@@ -3,17 +3,31 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-img{
-  left: 0;
-  top: 0;
-  margin: 0;
-  margin-top: -15px;
-  padding: 0;
-  width: 200px;
-  height: 140px;
-  position: Absolute;
+@media (min-width: 860px){
+
+  img.karima {
+    position: absolute;
+    top: -40px;
+    left: -80px;/* Déplace le logo vers la  gauche */
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 140px;
+    z-index: 1;
+  }
   
 }
+@media (max-width: 860px) {
+  img.karima {
+    position: absolute;
+    top: -58px;
+    left: 0px;
+    width: 200px;
+    height: 140px;
+  }
+}
+
+
 .nav-link{
   position: relative;
   color:#2A3C59;
@@ -69,7 +83,6 @@ li{
 }
 
 @media (min-width: 860px){
-  
   .nav-items{
     display: flex; 
   }

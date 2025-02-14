@@ -1,4 +1,41 @@
-
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .linkden_button {
+    background-color: #ff8fb2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .linkden_button:hover {
+    background-color: #feb7c3;
+  }
+  
+  .icon {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .link:hover .icon {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 760px) and (min-width: 553px) {
+    .container div:nth-child(2) {
+      font-size: 60px !important; /* Adjust the size if necessary */
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  }
+  
 .linkden_button {
     font-size: 20px;
     cursor: pointer;
@@ -15,13 +52,13 @@
     
 }
 
-.linkden_button:hover {
+.linkden_button:hover  {
     background-color: #fff;
     color: #ff8fb2;
     transition: all 0.2s ease-in-out;
     scale: 1.05;
     box-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
 
+   
 }
-
 

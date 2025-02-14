@@ -25,7 +25,7 @@ function About() {
       <span className='title' style={{fontSize:'80px',color: "#ff8fb2"}}>Who am I?</span> <br /><br />
       <div className='content'>
         <p className='description'>
-          I'm Karima BENIHDA, a passionate learner exploring the world of web development 💻
+          I'm Karima BENIHDA, a curious web development learner , always eager to learn and explore new technologies. With a keen eye for detail and a love for crafting seamless digital experiences, I thrive on turning ideas into interactive web applications. 💻 Constantly evolving, constantly creating!✨
         </p>
         <p><b><CiLocationArrow1 className='flech_icon' style={{color:'#ff8fb2'}}/> Age: </b>{calcul_age("2004-06-20")} years old.</p>
         <p><b><CiLocationArrow1 className='flech_icon' style={{color:'#ff8fb2'}}/> Date of Birth: </b>June 20, 2004.</p>

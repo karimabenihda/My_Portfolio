@@ -9,8 +9,8 @@ const Home = () => {
     { text: "Karima BENIHDA", color: "#ff8fb2", fontSize: "85px", fontWeight: "bolder", fontFamily: "Montserrat, sans-serif", textShadow: "1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2" },
     { text: "Fullstack Web Developer", color: "#fff", fontSize: "30px", fontWeight: "bold", fontFamily: "Montserrat, sans-serif" },
   ];
-
-  const buttonText = "More about me";
+    
+    const buttonText = "More about me";
   const [inView, setInView] = useState(false);
   const ref = useRef();
 
@@ -78,7 +78,7 @@ const Home = () => {
               style={styles}
             >
               <button className="linkden_button">
-                <FaLinkedin  style={{ width: '30px', height: '30px',marginRight:'8px' }} />
+                <FaLinkedin className="icon_linkedin"  style={{ width: '30px', height: '30px',marginRight:'8px' }} />
                 {buttonText}
               </button>
             </animated.a>
@@ -91,7 +91,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className='icon' style={{width: '55px', height: '55px'}} />
+              <FaGithub className='icon' style={{width: '55px', height: '55px',marginTop:'-20px'}} />
             </animated.a>
           
           </div>
