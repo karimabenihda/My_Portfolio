@@ -62,3 +62,37 @@
    
 }
 
+.name-text {
+  font-size: 85px;
+  font-weight: bolder;
+  font-family: "Montserrat, sans-serif";
+  color: #ff8fb2;
+  text-shadow: 1px 1px 10px #ff8fb2, -1px -1px 10px #ff8fb2;
+  display: inline;
+}
+
+.cursor {
+  font-size: 85px;
+  font-weight: bold;
+  color: #ff8fb2;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.intro-text {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  
+}
+
+.job-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}

@@ -52,7 +52,7 @@
   .countdown-number {
     font-size: 30px;
     font-weight: 900;
-    color: #feb7c3; /* Warm golden color */
+    color: #feb7c3;
     text-shadow: 0 0 15px #feb7c37c;
     animation: pulse 0.7s ease-in-out infinite alternate;
   }
