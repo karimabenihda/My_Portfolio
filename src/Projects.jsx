@@ -33,6 +33,23 @@ function Projects() {
       link: "https://github.com/karimabenihda/Happy_Donuts_Store",
       site:'https://happy-donuts-store.vercel.app/'
     },
+   
+    {
+      name: "LitLibrary",
+      description: "Book manager, allows users to add ,edit and delete book's informations with image",
+      language: "Laravel ",
+      link: "https://github.com/karimabenihda/LitLibrary.git",
+      site:'https://github.com/karimabenihda/LitLibrary.git'
+    }
+    ,
+    {
+      name: "Laravel-Authenticated-Todolist",
+      description: "Laravel app where users can sign up, sign in, and manage their own personalized to-do lists ",
+      language: "Laravel ",
+      link: "https://github.com/karimabenihda/Laravel-Authenticated-Todolist.git",
+      site:'https://github.com/karimabenihda/Laravel-Authenticated-Todolist.git'
+    }
+ ,
     {
       name: "Fontify",
       description: "Type a text and instantly transforms it into various fonts, ready to copy and use anywhere",
