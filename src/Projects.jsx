@@ -38,8 +38,9 @@ function Projects() {
             </span>
           </div>
         ))}
-      </div>
+      </div>  <br/>
       {visibleProjects < projectData.length && (
+      
         <button className='show-more' onClick={showMore}>Show More</button>
       )}
     </div>
