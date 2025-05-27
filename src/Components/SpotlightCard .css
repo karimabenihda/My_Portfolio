@@ -27,3 +27,10 @@
 .card-spotlight:focus-within::before {
   opacity: 0.6;
 }
+
+/* Show spotlight always on mobile/small screens */
+@media (hover: none), (pointer: coarse) {
+  .card-spotlight::before {
+    opacity: 0.3; /* visible spotlight */
+  }
+}

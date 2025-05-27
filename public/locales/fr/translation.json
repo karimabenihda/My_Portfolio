@@ -13,8 +13,8 @@
     "p": "Façonner l'univers numérique"
   },
   "about": {
-    "title":"",
-    "p":"",
+   "titre": "Mon parcours",
+   "p": "Éducation et expérience professionnelle",
     "download": "Télécharger le CV",
     "t1": "Développeuse FrontEnd",
     "p1": "Création d'une interface utilisateur évolutive et responsive utilisant React et Tailwind CSS avec une intégration API fluide pour un rendu dynamique des données.",

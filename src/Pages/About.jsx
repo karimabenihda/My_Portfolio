@@ -1,8 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
 import { useSpring, animated } from '@react-spring/web';
-import { FaDownload } from "react-icons/fa";
-import { LuFlower } from "react-icons/lu";
-import { CiLocationArrow1 } from "react-icons/ci";
 import cv from '../CV_Karima_BENIHDA.pdf';
 import Magnet from '../Components/Magnet'
 import { Briefcase, Download, GraduationCap, 
@@ -22,7 +19,7 @@ const items = [
           skills: ["React", "tailwind", "Postgress", "Formik"],
           icon:<Briefcase/>
         },      
-  {
+        {
           date: "2023 - 2025",
           title: t("about.t2"),
           company: "ISTA Ait Melloul",
@@ -77,15 +74,16 @@ const age = calcul_age("2004-06-20");
 
 
     return (
-      <>
+      <><animated.div ref={ref} style={fadeIn} className='content'>
+
    <div className="!mb-3 flex flex-col items-center justify-center gap-4 text-center">
+ 
   <h1 className="text-4xl font-bold">{t("about.titre")}</h1>
   <p className="!text-gray-400">{t("about.p")}</p>
 </div>
 
     <div className='flex gap-3 flex-col md:flex-row md:w-full'>
       <div className="sec1 rounded-2xl text-sm !py-6 shadow-xl flex justify-center items-center  md:w-1/3 w-full">
-<animated.div ref={ref} style={fadeIn} className='content'>
  <AnimatedContent
   distance={150}
   direction="horizontal"
@@ -152,7 +150,6 @@ const age = calcul_age("2004-06-20");
                 </Magnet></div>
                 </AnimatedContent>
 
-</animated.div>
 
       </div>
 
@@ -198,7 +195,8 @@ const age = calcul_age("2004-06-20");
           ))}
         </section>
       </div>
-    </div></>
+    </div></animated.div>
+</>
   )
 }
 
