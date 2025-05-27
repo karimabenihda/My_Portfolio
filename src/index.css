@@ -1,166 +1,52 @@
-body{
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media (min-width: 860px){
+@import "tailwindcss";
 
-  img.karima {
-    position: absolute;
-    top: -40px;
-    left: -80px;/* Déplace le logo vers la  gauche */
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    height: 140px;
-    z-index: 1;
-  }
-  
-}
-@media (max-width: 860px) {
-  img.karima {
-    position: absolute;
-    top: -58px;
-    left: 0px;
-    width: 200px;
-    height: 140px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* GeneralSans Font-Face Declarations */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Extralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-.nav-link{
-  position: relative;
-  color:#2A3C59;
-  
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-.nav-link::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #feb7c3;
-  transition: width 0.3s ease;
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.nav-link:hover::after {
-  width: 100%;
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-li{
-  list-style-type: none;
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-/* .linkden_cv_button {
-  border-radius: 30px;
-  padding: 17px;
-  margin-top: 37px;
-  border: none;
-  background-color: #feb7c3;
-  color: #fff;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-} */
-
-/* .linkden_cv_button:hover {
-  transform: translate(5px); 
-  background-color: #fff;
-  color: #feb7c3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-} */
-
-
-
-.nav{
-  margin-top: -20px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
-
-@media (min-width: 860px){
-  .nav-items{
-    display: flex; 
-  }
-    .nav-items:hover{
-      display: flex;
-    }
-  .menu-icon {
-    display: none;
-  }
-}
-
-
-@media (max-width: 860px) {
- 
-  .nav-items {
-    opacity: 0;
-    visibility: hidden;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: white;
-    width: 150px;
-    border: 1px solid #ddd;
-    transform: scale(0.95);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-  }
-
-  .nav-items.active {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-  }
-
-  .menu-icon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 35px;
-    transition: transform 0.3s ease;
-  }
-
-  .menu-icon:hover {
-    transform: rotate(90deg);
-  }
-}
-
-ol li {
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-ol li:hover {
-  transform: translateX(10px);
-}
-
-.flech_icon {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
-}
-
-p:hover .flech_icon {
-  transform: rotate(53deg);
-
-}
-
-
-
-p:hover {
-  transform: translateX(10px);
-  transition: transform 0.3s ease;
-
-}
-
-
-
-

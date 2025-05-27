@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karima BENIHDA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+
+    <style>
+   *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      body{
+        /* height: 100vh; */
+        margin:0;
+        padding: 0;
+        color: aliceblue;
+        /* background-color: #FFFF; */
+        /* cursor: none; */
+        /* cursor:inherit */
+      }
+      .background{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100%;
+      }
+      #back-vid{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        mix-blend-mode:overlay;
+      }
+      @media(max-aspect-ratio:16/9){
+        .back-vid{
+        width: auto;
+        height: 100%;
+        }
+      }
+      @media(min-aspect-ratio:16/9){
+        .back-vid{
+        height: auto;
+        width : 100%;
+        }
+      }
+
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: aliceblue;
+}
+
+ .cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0,0%,100%,0.5) ;
+ }
+.cursor-dot, 
+      .cursor-outline:hover{
+                cursor:auto
+
+      }
+      .cursor-dot, 
+      .cursor-outline {
+position: fixed;
+top:0;
+left:0;
+transform: translate(-50%,-50%);
+border-radius: 50%;
+z-index: 1;
+pointer-events: none;
+/* pointer-events: all; */
+      }   
+    </style>
+</head>
+
+<body style="background-color:#0B0C10;">
+  <div class="background">
+    <video id="back-vid" loop autoplay muted plays-inline src="public/galaxy.mp4" type="video mp4">
+      
+      <div id="root" ></div>
+      <!-- <div id="portals"></div> -->
+      <script type="module" src="/src/index.jsx"></script>
+    </video>
+     </div>
+   <!-- <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div> -->
+<!-- <script>
+const cursorDot=document.querySelector("[data-cursor-dot]");
+const CursorOutline=document.querySelector("[data-cursor-outline]");
+window.addEventListener("mousemove",function(e){
+  const posX=e.clientX;
+  const posY=e.clientY;
+
+  cursorDot.style.left=`${posX}px`;
+  cursorDot.style.top=`${posY}px`;
+    CursorOutline.style.left=`${posX}px`;
+  CursorOutline.style.top=`${posY}px`;
+
+  CursorOutline.animate({
+    left:`${posX}px`,
+    top:`${posY}px`
+  },
+{
+  duration:500,fill:"forwards"
+});});</script> -->
+
+</body>
+
+</html>
+
+
+<!-- #B66DF5 
+#D479E5 
+#F285A8  
+
+Electric Purple: #8E2DE2
+Magenta Rose: #DA22FF
+
+Deep Blue: #0F2027
+Space Cyan: #2C5364
+
+Nebula Blue – #2CD8D5
+Cosmic Magenta – #C73BFF
+
+#0B0C10 
+
+background: linear-gradient(to bottom, #2CD8D5, #C73BFF);
+background-color: #0B0C10;
+
+background: linear-gradient(to bottom, #8E2DE2, #DA22FF);
+background-color: black;
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#D479E5" d="M47.3,-18.3C53.9,5.1,46.9,30,32.9,38.6C18.9,47.2,-2.1,39.5,-23.4,25.6C-44.8,11.7,-66.4,-8.5,-62.6,-28C-58.7,-47.6,-29.4,-66.5,-4.5,-65C20.3,-63.5,40.6,-41.7,47.3,-18.3Z" transform="translate(100 100)" />
+</svg>
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#D479E5" d="M56.7,-21.2C64.7,6.2,56.4,36.2,35.6,51.9C14.9,67.7,-18.3,69.3,-35.9,55.1C-53.5,41,-55.6,11.1,-47,-17.1C-38.4,-45.3,-19.2,-71.9,2.6,-72.7C24.3,-73.5,48.7,-48.6,56.7,-21.2Z" transform="translate(100 100)" />
+</svg>
+-->

@@ -5,124 +5,83 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/karimab.png" type="image/x-icon" />
- 
     <title>Karima BENIHDA</title>
-    
     <style>
-      body {
-        background-color: black;
-        color: aliceblue;
+
+      *{
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      }
-
-      /* Full-screen particle container */
-      #particles-js {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        z-index: -1; 
+        padding:0;
+        box-sizing: border-box;
+      }
+      body{
+        /* height: 100vh; */
+        /* background-color: #FFFF; */
+        margin: 0;
+        padding:0;
+        cursor: none;
+        /* cursor:inherit */
       }
 
-      #root {
-        position: relative;
-        z-index: 1; /* Ensures it's above the particles */
-        padding: 20px;
-        max-width: 800px;
-        margin: 0 auto;
-      }
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: aliceblue;
+}
 
-      /* Example content */
-      .section {
-        margin-bottom: 40px;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+ .cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0,0%,100%,0.5) ;
+ }
+.cursor-dot, 
+      .cursor-outline:hover{
+                cursor:auto
       }
-
-      .section h2 {
-        margin-top: 0;
+      .cursor-dot, 
+      .cursor-outline {
+position: fixed;
+top:0;
+left:0;
+transform: translate(-50%,-50%);
+border-radius: 50%;
+z-index: 1;
+pointer-events: none;
+/* pointer-events: all; */
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: #0B0C10 ;color:white;padding-inline:20px ;">
     <!-- Particles.js container -->
     <div id="particles-js"></div>
-
     <!-- Main content -->
     <div id="root"></div>
-    
-
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        particlesJS("particles-js", {
-          particles: {
-            number: {
-              value: 80,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: "#feb7c3",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000",
-              },
-            },
-            opacity: {
-              value: 0.5,
-            },
-            size: {
-              value: 3,
-              random: true,
-            },
-            line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#ff8fb2",
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 2,
-            },
-          },
-          interactivity: {
-            detect_on: "window",
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-              resize: true,
-            },
-            modes: {
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          retina_detect: true,
-        });
-      });
-    </script>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+<script>
+const cursorDot=document.querySelector("[data-cursor-dot]");
+const CursorOutline=document.querySelector("[data-cursor-outline]");
+window.addEventListener("mousemove",function(e){
+  const posX=e.clientX;
+  const posY=e.clientY;
+
+  cursorDot.style.left=`${posX}px`;
+  cursorDot.style.top=`${posY}px`;
+    CursorOutline.style.left=`${posX}px`;
+  CursorOutline.style.top=`${posY}px`;
+
+  CursorOutline.animate({
+    left:`${posX}px`,
+    top:`${posY}px`
+  },
+{
+  duration:500,fill:"forwards"
+});
+
+});
+</script>
   </body>
 </html>

@@ -4,203 +4,192 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="icon" href="/karimab.png" type="image/x-icon" />
+ 
+    <title>Karima BENIHDA</title>
+    
     <style>
+    
+      body {
+
+        background-color: #0B0C10 ;
+        color: aliceblue;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      }
+
+      /* Full-screen particle container */
       #particles-js {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        background-color: black;
-        z-index: -1;
+        background-color: #0B0C10 ;
+        z-index: -1; 
+      }
+
+      #root {
+        position: relative;
+        z-index: 1; /* Ensures it's above the particles */
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Example content */
+      .section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+      }
+
+      .section h2 {
+        margin-top: 0;
+      }
+
+      *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        /* background-color: #FFFF; */
+        /* cursor: none; */
+        /* cursor:inherit */
+      }
+
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: aliceblue;
+}
+
+ .cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0,0%,100%,0.5) ;
+ }
+.cursor-dot, 
+      .cursor-outline:hover{
+                cursor:auto
+
+      }
+      .cursor-dot, 
+      .cursor-outline {
+position: fixed;
+top:0;
+left:0;
+transform: translate(-50%,-50%);
+border-radius: 50%;
+z-index: 1;
+pointer-events: none;
+/* pointer-events: all; */
       }
     </style>
   </head>
-  <body style="background-color: black; color: aliceblue;">
+  <body>
     <!-- Particles.js container -->
     <div id="particles-js"></div>
+
+    <!-- Main content -->
     <div id="root"></div>
+    
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: "#ffffff",
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 0,
-              color: "#000000",
-            },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false,
-            },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 2,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "bounce",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 400,
-              line_linked: {
-                opacity: 1,
+      document.addEventListener("DOMContentLoaded", () => {
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
               },
             },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
+            color: {
+              value: "#B66DF5",
             },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#0B0C10",
+              },
             },
-            push: {
-              particles_nb: 4,
+            opacity: {
+              value: 0.5,
             },
-            remove: {
-              particles_nb: 2,
+            size: {
+              value: 3,
+              random: true,
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#B66DF5",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
             },
           },
-        },
-        retina_detect: true,
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          retina_detect: true,
+        });
       });
     </script>
-  </body>
-</html>
-
-<!-- ---------------- -->
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Prtfolio</title>
-    <style>
-      #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        z-index: -1;
-      }
-    </style>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Sevillana&display=swap');
-      </style>
-  </head>
-  <body style="background: linear-gradient(135deg, #f8e6ea, #ffffff);">
-    <div class="header finisher-header" style="width: 100%; height: 300px;">
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
 <script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
+const cursorDot=document.querySelector("[data-cursor-dot]");
+const CursorOutline=document.querySelector("[data-cursor-outline]");
+window.addEventListener("mousemove",function(e){
+  const posX=e.clientX;
+  const posY=e.clientY;
+
+  cursorDot.style.left=`${posX}px`;
+  cursorDot.style.top=`${posY}px`;
+    CursorOutline.style.left=`${posX}px`;
+  CursorOutline.style.top=`${posY}px`;
+
+  CursorOutline.animate({
+    left:`${posX}px`,
+    top:`${posY}px`
+  },
+{
+  duration:500,fill:"forwards"
+});
+
+});
 </script>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </div>
-  <script type="text/javascript">
-    new FinisherHeader({
-      "count": 96,
-      "size": {
-        "min": 1,
-        "max": 7,
-        "pulse": 0.1
-      },
-      "speed": {
-        "x": {
-          "min": 0,
-          "max": 0.4
-        },
-        "y": {
-          "min": 0,
-          "max": 0.6
-        }
-      },
-      "colors": {
-        "background": "#201e30",
-        "particles": [
-          "#fbfcca",
-          "#d7f3fe",
-          "#ffd0a7"
-        ]
-      },
-      "blending": "overlay",
-      "opacity": {
-        "center": 1,
-        "edge": 0
-      },
-      "skew": -2,
-      "shapes": [
-        "c"
-      ]
-    });
-    </script>    
-  </script>
-
-
-  
   </body>
 </html>

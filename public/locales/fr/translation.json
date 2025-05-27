@@ -1,0 +1,58 @@
+{
+ "navbar":{
+  "home":"Accueil",
+  "about":"A Propos",
+  "projects":"Projets",
+  "skills":"Outils"
+ },
+  "home": {
+    "hello": "Bonjour, C'est",
+    "who": "Une Développeuse FullStack Web",
+    "description": "Je suis une développeuse full-stack dédié à la création de solutions web modernes et évolutives.",
+    "button": "En savoir plus sur moi",
+    "p": "Façonner l'univers numérique"
+  },
+  "about": {
+    "title":"",
+    "p":"",
+    "download": "Télécharger le CV",
+    "t1": "Développeuse FrontEnd",
+    "p1": "Création d'une interface utilisateur évolutive et responsive utilisant React et Tailwind CSS avec une intégration API fluide pour un rendu dynamique des données.",
+    "t2": "Développeuse Full Stack",
+    "p2": "Diplômé de l'ISTA Ait Melloul, spécialisé en développement numérique, option Full Stack Web.",
+    "t3": "Bachelière",
+    "p3": "Bachelière du lycée Albakkali, spécialisé en Sciences de la Vie et de la Terre (SVT), avec une mention 'Bien'.",
+    "company": "Lycée El Baqqali"
+  },
+  "skills": {
+    "title": "Compétences & Expertise",
+    "p": "Collection complète de technologies et méthodologies maîtrisées au cours de mon parcours professionnel, allant des langages de programmation aux frameworks et outils web utilisés dans mes projets.",
+    "all": "Toutes les compétences",
+    "database": "Base de données",
+    "tools": "Outils"
+  },
+  "projects": {
+    "Title": "Projets phares",
+    "p": "Découvrez quelques-uns de mes travaux récents et projets personnels",
+    "d1": "BMC interactif développé par les membres de Classsik pour personnaliser leur BMC.",
+    "d2": "Application web pour la gestion de projets, l'organisation des tâches et la collaboration entre membres.",
+    "d3": "Application Tkinter pour sélectionner un modèle d'ordinateur et calculer des remises.",
+    "d4": "Catalogue numérique et boutons radio pour filtrer les produits par catégorie et prix.",
+    "d5": "Panier d'achat pour parcourir des donuts par catégorie et voir le prix total pour le paiement.",
+    "d6": "Transformer du texte saisi en diverses polices, prêt à copier et utiliser partout.",
+    "d7": "Gestionnaire de livres, permettant d'ajouter, modifier et supprimer des informations sur les livres avec des images.",
+    "d8": "Application Laravel où vous vous inscrivez, vous connectez et gérez vos listes de tâches personnalisées.",
+    "button": "Afficher plus"
+  },
+  "contact": {
+    "title": "Entrons en contact",
+    "p": "Choisissez votre moyen préféré pour me joindre",
+    "div": "Connectez-vous avec moi",
+    "info": "Envoyez-moi un message",
+    "name_placeholder": "Votre nom :",
+    "email_placeholder": "Votre e-mail :",
+    "message_placeholder": "Votre message :",
+    "button": "Envoyer le message",
+    "copy": "Tous droits réservés."
+  }
+}

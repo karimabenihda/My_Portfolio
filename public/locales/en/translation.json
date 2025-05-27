@@ -1,0 +1,59 @@
+{
+  "navbar":{
+  "home":"Home",
+  "About":"About",
+  "projects":"Projects",
+  "skills":"Skills"
+
+ },
+"home":{
+"hello":"Hello, This is ",
+"who":"A FullStack Web Developer",
+"description":"I’m a dedicated full-stack web developer committed to building scalable and modern web solutions.",
+"button":"More about me",
+"p":"Shaping the Digital Universe"
+},
+"about":{
+"titre":"My Journey",
+"p":"Education and Work Experience",
+"download":"Download Resume",
+"t1":"FrontEnd Developer",
+"p1":"Built a scalable and responsive user interface using React and Tailwind CSS with seamless API integration for dynamic data rendering.",
+"t2":"Full Stack Web Developer",
+"p2":"Graduated from Albakkali High School, specializing in Life and Earth Sciences 'SVT', with a 'Bien' distinction.",
+"t3":"High school graduate",
+"p3":"Graduated from ISTA Ait Melloul, specializing in Digital Development, Full Stack Web option.",
+"company":"El Baqqali High School"
+},
+"skills":{
+"title":"Skills & Expertise",
+"p":"Comprehensive collection of technologies and methodologies I’ve mastered througout my professional journey, ranging from programming languages to web development frameworks and tools I use in my projects.",
+"all":"All skills",
+"database":"Database",
+"tools":"Tools"
+},
+"projects":{
+    "Title":"Featured Projects",
+    "p":"Explore some of my recent work and personal projects",
+"d1":"Interactif BMC developed by Classsik members to customize their BMC.",
+"d2":"Web app for Project management ,tasks organization and members collaboration ", 
+"d3":"Tkinter App for selecting a computer model and calculating discounts.",
+"d4":"Digital catalogue and radio buttons for filtering products by category and price.",
+"d5":"Shopping Cart for browsing donuts by category and view total price for checkout.",
+"d6":"Transform Typed text into various fonts, ready to copy and use anywhere.",
+"d7":"Book manager, allows users to add, edit, and delete book information with images.",
+"d8":"Laravel app where you sign up, sign in, and manage your own personalized to-do lists.",
+"button":"Show More"
+},
+"contact":{
+"title":"Let's Connect",
+"p":"Choose your preferred way to reach out",
+"div":"  Connect with me",
+"info":"Send me a message",
+"name_placeholder":"Your name:",
+"email_placeholder":"Your email:",
+"message_placeholder":"Your message:",
+"button":"Send Message",
+"copy":" All rights reserved."
+}
+}
