@@ -19,7 +19,6 @@ function LanguageSwitcher() {
     i18n.changeLanguage(lng);
     setIsOpen(false);
   };
-
   const flags = [
     {
       code: "fr",
