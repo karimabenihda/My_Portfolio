@@ -65,7 +65,7 @@ function Contact() {
                     <User />
                   </span>
     <input type="email" placeholder={t("contact.name_placeholder")} name="name" 
- className="!pl-12 h-10 w-full border border-[#223] bg-[#F6B5790A] focus:outline-none  flex
+ className="!pl-12 h-10 w-full border border-[#334155] bg-[#F6B5790A] focus:outline-none  flex
 placeholder:text-placeholder rounded-xl 
 focus-visible:border-indigo-400 focus-visible:border-1 
 disabled:cursor-not-allowed  md:text-sm font-medium"
@@ -78,7 +78,7 @@ disabled:cursor-not-allowed  md:text-sm font-medium"
                     <Mail />
                   </span>
     <input type="email" placeholder={t("contact.email_placeholder")} name="email" 
- className="!pl-12 h-10 w-full focus-visible:border-indigo-400 bt-[#ffff] bg-[#F6B5790A] focus:outline-none  flex 
+ className="!pl-12 h-10 w-full focus-visible:border-indigo-400 border border-[#444d59] bg-[#F6B5790A] focus:outline-none  flex 
                placeholder:text-placeholder 
                rounded-xl px-3   focus-visible:border-1 disabled:cursor-not-allowed  md:text-sm font-medium"
     />
@@ -89,7 +89,7 @@ disabled:cursor-not-allowed  md:text-sm font-medium"
                     <MessageCircle />
                   </span>
     <textarea name="message" placeholder={t("contact.message_placeholder")} 
- className="w-full focus-visible:border-indigo-400  !pt-2 h-24 font-medium bg-[#F6B5790A]  placeholder:pl-10 !placeholder:pt-2 rounded-xl"
+ className="w-full focus-visible:border-indigo-400 border border-[#334155] !pt-2 h-24 font-medium bg-[#F6B5790A]  placeholder:pl-10 !placeholder:pt-2 rounded-xl"
 ></textarea>
   </div>
 <button type="submit"
