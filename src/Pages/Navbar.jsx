@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { IoMenu } from "react-icons/io5";
 import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import { Code,Send ,Moon,Sun,Settings 	, BriefcaseBusiness, House,User, Languages } from 'lucide-react';
-import karima from '/karima.png';
+import karima from '/karimalogo.png';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import StarBorder from '../Components/StarBorder'
@@ -23,11 +23,11 @@ const toggleDarkMode = () => {
   }
   return (
     <div className=''>
-<div className=" flex items-center !z-4 justify-between !gap-4 !py-2
+<div className="flex items-center !z-4 justify-between !gap-4 !py-2
 fixed top-0 left-0 right-0  transition-all duration-300 
 bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
 "     style={{backdropFilter: 'blur(16px)'}}>
-          <img src={karima} width={150}/>
+          <img src={karima} width={70} className='!ml-6'/>
         <div className="flex items-center ml-auto !gap-15 ">
 <motion.div
   className="hidden md:flex !gap-11 text-lg font-bold"
@@ -60,7 +60,7 @@ bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
 
           {/* <div className="flex justify-arround gap-2"> */}
               <div className="flex items-center gap-2">
-  <button onClick={toggleDarkMode} className="p-2">
+  {/* <button onClick={toggleDarkMode} className="p-2">
       <AnimatePresence mode="wait" initial={false}>
         {darkMode ? (
           <motion.div
@@ -84,12 +84,9 @@ bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
           </motion.div>
         )}
       </AnimatePresence>
-    </button>
+    </button> */}
 
-            {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>   */}
-            <LanguageSwitcher/>
+             <LanguageSwitcher/>
           </div>
        </div>
       </div>

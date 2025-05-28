@@ -52,8 +52,8 @@ function Soloproject(){
   <div className='relative z-10 w-full h-full flex items-end justify-center'>
     <SpotlightCard
       className="custom-spotlight-card w-[260px] md:w-[300px] h-[250px]  transition-transform duration-500 hover:opacity-90 hover:scale-105"
-      spotlightColor="rgba(182, 109, 245, 0.2)"
-    >
+      spotlightColor="rgba(182, 109, 245, 0.2)">
+      {/* <div className="md:hidden "> */}
       <h4 className='text-xl !text-[#fff] font-bold !pb-1'>{project.name}</h4>
       <p className='text-sm font-[400] !text-gray-200 !my-1'>{project.description}</p>
   
@@ -80,6 +80,7 @@ function Soloproject(){
               
 
       </div>
+      {/* </div> */}
     </SpotlightCard>
   </div>
 </div>

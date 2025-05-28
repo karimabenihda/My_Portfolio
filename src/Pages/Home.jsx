@@ -54,8 +54,28 @@ function Home() {
               </p>
             </div>
 
-            <div className="contact flex flex-wrap !pt-4 gap-6">
-              {/* <div className="contact flex flex-wrap !pt-4 justify-center gap-6"> */}
+<div className="md:hidden flex flex-wrap !pt-4 gap-6">
+            <a href="https://github.com/karimabenihda"
+          target="_blank"
+          rel="noopener noreferrer">
+                 <div className="!p-3 border !border-[#222] rounded-full bg-transparent transition duration-300 ease-in-out hover:shadow-xl hover:shadow-[#B66DF5]/50 hover:-translate-y-1 hover:scale-110 flex items-center justify-center">
+                 <Github />
+                 </div>
+                 </a>
+                   <a href="mailto:karimabenihda@gmail.com" target="_blank" rel="noopener noreferrer">
+                     <div className="!p-3 border !border-[#222] rounded-full bg-transparent transition duration-300 ease-in-out hover:shadow-xl hover:shadow-[#B66DF5]/50 hover:-translate-y-1 hover:scale-110 flex items-center justify-center">
+                    <Mail />  </div>
+                   </a>
+
+                 <a href="https://www.linkedin.com/in/karima-benihda-3004ba326"
+          target="_blank"
+          rel="noopener noreferrer" className="flex gap-2 border-gray-400 px-4 py-1 rounded-3xl ">
+              <div className="gap-3 !p-3 border !border-[#222] rounded-full bg-transparent transition duration-300 ease-in-out hover:shadow-xl hover:shadow-[#B66DF5]/50 hover:-translate-y-1 hover:scale-110 flex items-center justify-center"> 
+              <Linkedin />{t('home.button')}</div>
+               </a>
+          </div>
+
+            <div className="hidden md:flex  contact  flex-wrap !pt-4 gap-6">
             <a href="https://github.com/karimabenihda"
           target="_blank"
           rel="noopener noreferrer">
@@ -76,11 +96,11 @@ function Home() {
           rel="noopener noreferrer" className="flex gap-2 border-gray-400 px-4 py-1 rounded-3xl ">
                <Magnet padding={50} disabled={false} magnetStrength={11} className="!p-3 border !border-[#222] rounded-full bg-transparent transition duration-300 ease-in-out hover:shadow-xl hover:shadow-[#B66DF5]/50 hover:-translate-y-1 hover:scale-110 flex items-center justify-center">
               <div className="flex gap-3"> 
-              <Linkedin />{t('home.button')}</div>
+                <Linkedin />{t('home.button')}
+              </div>
               </Magnet>
                </a>
           </div>
-            {/* </div> */}
           </div>
         </motion.div>
 

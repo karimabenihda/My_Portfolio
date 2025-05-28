@@ -152,22 +152,18 @@ const age = calcul_age("2004-06-20");
 
 
       </div>
-
-      
       <div className="sec2 md:w-2/3 border rounded-2xl !border-[#222] w-full">
-
 <section className="timeline-items !p-6">
           {items.map((item, index) => (
              <AnimatedContent
   distance={150}
-  direction="horizontal"
+  direction="vertical"
   reverse={false}
   config={{ tension: 80, friction: 20 }}
   initialOpacity={0.2}
   animateOpacity
   scale={1.1}
-  threshold={0.2}
->
+  threshold={0.2}>
             <div key={index} className="timeline-item flex items-start !mb-2 relative">
             <div className="timeline-dot z-2 bg-indigo-400 !p-0.5 rounded-full absolute  -left-1.5">
             {item.icon}
