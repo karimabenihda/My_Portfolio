@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll'; 
 import { IoMenu } from "react-icons/io5";
 import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
-import { Code,Send ,Moon,Sun,Settings 	, BriefcaseBusiness, House,User, Languages } from 'lucide-react';
+import { Code,Send ,Moon,Sun,Settings 	, BriefcaseBusiness, House,User, Languages, Github } from 'lucide-react';
 import karima from '/karimalogo.png';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -85,7 +85,11 @@ bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
         )}
       </AnimatePresence>
     </button> */}
-
+       <a href="https://github.com/karimabenihda"
+          target="_blank"
+          rel="noopener noreferrer">
+<Github/>
+    </a>
              <LanguageSwitcher/>
           </div>
        </div>

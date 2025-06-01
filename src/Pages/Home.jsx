@@ -17,6 +17,7 @@ function Home() {
   return (
     <>
     <div className="w-full !pt-20 md:!pt-30 ">
+
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Text Section with fade-in */}
         <motion.div
@@ -88,7 +89,6 @@ function Home() {
                     <Mail />
                </Magnet>
                    </a>
-
 
                  
                  <a href="https://www.linkedin.com/in/karima-benihda-3004ba326"
