@@ -3,15 +3,26 @@ import Magnet from '../Components/Magnet'
 import { Github, Linkedin, Mail, MessageCircle, Phone, Send, User } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'react-i18next';
+import BlurText from '../Components/BlurText';
 function Contact() {
     const [isHovered, setIsHovered] = useState(false);
   const { t } = useTranslation();
-
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
   return (
     <div className="!mt-10">
        <div className="!mb-4 flex flex-col items-center justify-center gap-4 text-center">
-  <h1 className="text-4xl font-bold">{t("contact.title")}</h1>
-  <p className="!text-gray-400">{t("contact.p")}</p>
+  {/* <h1 className="text-4xl font-bold">{t("contact.title")}</h1> */}
+  <BlurText
+  text={t("contact.title")}
+  delay={100}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-5xl md:text-7xl font-bold mb-8"
+/>
+  <p className="!text-gray-400 !py-3">{t("contact.p")}</p>
 
     </div>
     <div className="sec1 flex flex-col md:flex-row w-full gap-6">

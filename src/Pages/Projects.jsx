@@ -3,10 +3,13 @@ import React,{useState} from 'react'
   import SpotlightCard from '../Components/SpotlightCard '
 import AnimatedContent from "../Components/AnimatedContent"
 import { useTranslation } from 'react-i18next';
+import BlurText from '../Components/BlurText';
 
 function Soloproject(){
   const { t } = useTranslation();
-
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
     const projectData = [
       { name: "CLASSIK BMC",image:'/project_imgs/ClassikBmc.PNG', description: t("projects.d1"), language: "React", link: "https://github.com/karimabenihda/CLASSIC_BMC", site:"https://classic-bmc.vercel.app/" },
       { name: "Organizeo",image:'/project_imgs/organizeo.PNG', description:t("projects.d2"), language: "Laravel ", link: "https://github.com/karimabenihda/Organizeo.git", site:'https://github.com/karimabenihda/Organizeo.git' },
@@ -24,8 +27,16 @@ function Soloproject(){
   return (
     <div>
  <div className="!mb-4 flex flex-col items-center justify-center gap-4 text-center">
-  <h1 className="text-4xl font-bold">{t("projects.Title")}</h1>
-  <p className="!text-gray-400">{t("projects.p")}</p>
+  {/* <h1 className="text-4xl font-bold">{t("projects.Title")}</h1> */}
+  <BlurText
+    text={t("projects.Title")}
+    delay={100}
+    animateBy="words"
+    direction="top"
+    onAnimationComplete={handleAnimationComplete}
+    className="text-5xl md:text-7xl font-bold mb-8"
+  />
+  <p className="!text-gray-400 !py-3">{t("projects.p")}</p>
 </div>
 
  <div className=''>

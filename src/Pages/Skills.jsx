@@ -16,10 +16,13 @@ import { CgTrello } from "react-icons/cg";
 import { motion } from "framer-motion";
 import Card from '../Components/Card';
 import { useTranslation } from 'react-i18next';
+import BlurText from '../Components/BlurText';
 
 function Skills() {
   const { t }=useTranslation();
-
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
       const[type,setType]=useState(t('skills.all'));
 function handleChange(e){
     setType(e.target.value);
@@ -82,8 +85,16 @@ function handleChange(e){
     <div className="">
 <animated.div ref={ref} style={fadeIn} className="!px-4 !max-w-7xl !mx-auto">
        <div className="!mb-4 flex flex-col items-center justify-center gap-4 text-center">
-        <h1 className='text-4xl font-bold'>{t("skills.title")}</h1>
-        <p className="!text-gray-400">{t("skills.p")}</p>
+        {/* <h1 className='text-4xl font-bold'>{t("skills.title")}</h1> */}
+        <BlurText
+  text={t("skills.title")}
+  delay={100}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-5xl md:text-7xl font-bold mb-8"
+/>
+        <p className="!text-gray-400 !py-3">{t("skills.p")}</p>
       </div>
       <div className="flex justify-center items-center">
         <motion.div

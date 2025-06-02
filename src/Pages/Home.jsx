@@ -4,7 +4,6 @@ import GradientText from '../Components/GradientText'
 import SplashCursor from '../Components/SplashCursor'
 import InfiniteScroll from '../Components/InfiniteScroll'
 import Magnet from '../Components/Magnet'
-// import AnimatedContent from '../Components/AnimatedContent'
 import Particles from '../Components/Particles';
 import Orb from '../Components/Orb';
 import { motion } from 'framer-motion';

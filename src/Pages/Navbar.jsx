@@ -36,7 +36,6 @@ bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
   transition={{ duration: 0.6 }}
 >
   {/* {[t('navbar.home'), t('navbar.about') , t('navbar.skills'), t('navbar.projects'), 'contact'].map((section) => ( */}
-
   {['home', 'about', 'skills','projects', 'contact'].map((section) => (
     <ScrollLink
       key={section}
@@ -85,11 +84,7 @@ bg-[#222]/40 backdrop-blur-xl shadow-lg border-b border-gray-900
         )}
       </AnimatePresence>
     </button> */}
-       <a href="https://github.com/karimabenihda"
-          target="_blank"
-          rel="noopener noreferrer">
-<Github/>
-    </a>
+      
              <LanguageSwitcher/>
           </div>
        </div>

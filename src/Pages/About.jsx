@@ -4,12 +4,16 @@ import cv from '../CV_Karima_BENIHDA.pdf';
 import Magnet from '../Components/Magnet'
 import { Briefcase, Download, GraduationCap, 
 } from 'lucide-react';
+import BlurText from '../Components/BlurText'
 import SpotlightCard from '../Components/SpotlightCard ';
 import AnimatedContent from '../Components/AnimatedContent'
 import { useTranslation } from 'react-i18next';
 
 function About() {
   const { t }=useTranslation();
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
 const items = [
   {
           date: "2025",
@@ -77,9 +81,18 @@ const age = calcul_age("2004-06-20");
       <><animated.div ref={ref} style={fadeIn} className='content'>
 
    <div className="!mb-3 flex flex-col items-center justify-center gap-4 text-center">
- 
-  <h1 className="text-4xl font-bold">{t("about.titre")}</h1>
-  <p className="!text-gray-400">{t("about.p")}</p>
+
+
+<BlurText
+  text={t("about.titre")}
+  delay={100}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-5xl md:text-7xl font-bold mb-8"
+/>
+  {/* <h1 className="text-4xl font-bold">{t("about.titre")}</h1> */}
+  <p className="!text-gray-400 text-xl !py-3">{t("about.p")}</p>
 </div>
 
     <div className='flex gap-3 flex-col md:flex-row md:w-full'>
