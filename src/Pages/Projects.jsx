@@ -55,7 +55,9 @@ function Soloproject(){
   <div  className='group relative w-[300px] h-[300px] md:h-[340px] md:w-[400px] text-[#0B0C10] rounded-2xl overflow-hidden'
     key={index}
   > <div
-      className="absolute inset-0 bg-cover bg-center rounded-2xl transition-transform duration-500 group-hover:scale-110"
+      className="absolute inset-0 bg-cover bg-center rounded-2xl transition-transform duration-500 group-hover:scale-110       
+               opacity-85 
+ group-hover:opacity-100"
     style={{ backgroundImage: `url(${project.image})` }}
   ></div>
 
