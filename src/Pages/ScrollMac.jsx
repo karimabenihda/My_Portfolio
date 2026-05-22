@@ -10,7 +10,7 @@ import {
   HiOutlineBriefcase, 
   HiOutlineMail 
 } from "react-icons/hi";
-import StaggeredMenu from '../../../potfolio/src/scrollMac/StaggeredMenu';
+import StaggeredMenu from '../Components/StaggeredMenu';
 
 const MIN = 48;
 const MAX = 120;
