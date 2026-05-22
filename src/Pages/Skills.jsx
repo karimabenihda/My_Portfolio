@@ -7,7 +7,7 @@ import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql, SiMongodb, SiExpress, SiPostgresql } from "react-icons/si";
 import { useSpring, animated } from '@react-spring/web'; 
 import '../Style/skills.css';
-import { Github } from 'lucide-react';
+// import { Github } from 'lucide-react';
 import { DiScrum } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { LiaDocker } from "react-icons/lia";
@@ -17,6 +17,20 @@ import { motion } from "framer-motion";
 import Card from '../Components/Card';
 import { useTranslation } from 'react-i18next';
 import BlurText from '../Components/BlurText';
+
+
+
+// import { IoLogoJavascript, IoLogoHtml5 } from 'react-icons/io5';
+// import { TbBrandLaravel } from 'react-icons/tb';
+// import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri';
+import {  SiTensorflow, SiPandas, SiScikitlearn, SiJupyter, SiApacheairflow, SiMlflow, SiPrometheus, SiGrafana, SiOpentelemetry } from 'react-icons/si';
+import { Github } from 'lucide-react'; // assuming lucide-react for these
+// import { DiScrum } from 'react-icons/di';
+// import { LiaDocker } from 'react-icons/lia';
+// import { CgTrello } from 'react-icons/cg';
+import { SiHuggingface } from 'react-icons/si'; // For AI / GenAI
+import { GrTest } from 'react-icons/gr'; // For Testing
+
 
 function Skills() {
   const { t }=useTranslation();
@@ -28,29 +42,61 @@ function handleChange(e){
     setType(e.target.value);
 }
 
-  const skillsData=[
-    {name:"PHP",type:"Backend",icon:<FaPhp className='w-5 h-5'/>},
-    {name:"JavaScript",type:"Frontend",icon:<IoLogoJavascript className='w-5 h-5'/>},
-    {name:"Python",type:"Backend",icon:<FaPython className='w-5 h-5'/>},
-    {name:"Html",type:"Frontend",icon:<IoLogoHtml5 className='w-5 h-5'/>},
-    {name:"Css",type:"Frontend",icon:<FaCss3Alt className='w-5 h-5'/>},
-    {name:"Laravel",type:"Backend",icon:<TbBrandLaravel className='w-5 h-5'/>},
-    {name:"React",type:"Frontend",icon:<FaReact className='w-5 h-5'/>},
-    {name:"Nodejs",type:"Backend",icon:<FaNodeJs className='w-5 h-5'/>},
-    {name:"Express",type:"Backend",icon:<SiExpress className='w-5 h-5'/>},
-    {name:"Nextjs",type:"Frontend",icon:<RiNextjsLine className='w-5 h-5'/>},
-    {name:"Tailwind",type:"Frontend",icon:<RiTailwindCssFill className='w-5 h-5'/>},
-    {name:"MongoDB",type:t("skills.database"),icon:<SiMongodb className='w-5 h-5'/>},
-    {name:"Mysql",type:t("skills.database"),icon:<SiMysql className='w-5 h-5'/>},
-    {name:"Postgress",type:t("skills.database"),icon:<SiPostgresql className='w-5 h-5'/>},
-    {name:"Git/GitHub",type:t("skills.tools"),icon:<Github className='w-5 h-5'/>},
-    {name:"Agile",type:t("skills.tools"),icon:<DiScrum className='w-5 h-5'/>},
-    {name:"VsCode",type:t("skills.tools"),icon:<VscVscode className='w-5 h-5'/>},
-    {name:"Docker",type:t("skills.tools"),icon:<LiaDocker className='w-5 h-5'/>},
-    {name:"Postman",type:t("skills.tools"),icon:<SiPostman  className='w-5 h-5'/>},
-    {name:"Trello",type:t("skills.tools"),icon:<CgTrello className='w-5 h-5'/>},
+const skillsData = [
+  // 1. Programming Languages
+  { name: "Python", type: "Programming Languages", icon: <FaPython className='w-5 h-5'/> },
+  { name: "JavaScript", type: "Programming Languages", icon: <IoLogoJavascript className='w-5 h-5'/> },
+  { name: "PHP", type: "Programming Languages", icon: <FaPhp className='w-5 h-5'/> },
+  { name: "Html", type: "Programming Languages", icon: <IoLogoHtml5 className='w-5 h-5'/> },
+  { name: "Css", type: "Programming Languages", icon: <FaCss3Alt className='w-5 h-5'/> },
 
-  ]
+  // 2. Frameworks & Technologies
+  { name: "Nextjs", type: "Frameworks & Technologies", icon: <RiNextjsLine className='w-5 h-5'/> },
+  { name: "React", type: "Frameworks & Technologies", icon: <FaReact className='w-5 h-5'/> },
+  { name: "Tailwind", type: "Frameworks & Technologies", icon: <RiTailwindCssFill className='w-5 h-5'/> },
+  { name: "Express", type: "Frameworks & Technologies", icon: <SiExpress className='w-5 h-5'/> },
+  { name: "Laravel", type: "Frameworks & Technologies", icon: <TbBrandLaravel className='w-5 h-5'/> },
+  { name: "Nodejs", type: "Frameworks & Technologies", icon: <FaNodeJs className='w-5 h-5'/> },
+
+  // 3. Libraries & Data Science
+  { name: "Pandas", type: "Libraries & Data Science", icon: <SiPandas className='w-5 h-5'/> },
+  { name: "Scikit-learn", type: "Libraries & Data Science", icon: <SiScikitlearn className='w-5 h-5'/> },
+  { name: "TensorFlow", type: "Libraries & Data Science", icon: <SiTensorflow className='w-5 h-5'/> },
+
+  // 4. AI / Generative AI
+  { name: "LLMs (HF)", type: "AI / Generative AI", icon: <SiHuggingface className='w-5 h-5  '/> },
+  { name: "NLP / RAG", type: "AI / Generative AI", icon: <SiHuggingface className='w-5 h-5'/> },
+
+  // 5. Databases
+  { name: "Mysql", type: t("skills.database"), icon: <SiMysql className='w-5 h-5'/> },
+  { name: "Postgresql", type: t("skills.database"), icon: <SiPostgresql className='w-5 h-5'/> },
+  { name: "MongoDB", type: t("skills.database"), icon: <SiMongodb className='w-5 h-5'/> },
+
+  // 6. Tools & Platforms
+  { name: "Git/GitHub", type: t("skills.tools"), icon: <Github className='w-5 h-5'/> },
+  { name: "Postman", type: t("skills.tools"), icon: <SiPostman className='w-5 h-5'/> },
+  { name: "Jupyter / Colab", type: t("skills.tools"), icon: <SiJupyter className='w-5 h-5'/> },
+  { name: "Trello / Jira", type: t("skills.tools"), icon: <CgTrello className='w-5 h-5'/> },
+  { name: "VsCode", type: t("skills.tools"), icon: <VscVscode className='w-5 h-5'/> },
+
+  // 7. DevOps & CI/CD
+  { name: "Docker", type: "DevOps & CI/CD", icon: <LiaDocker className='w-5 h-5'/> },
+
+  // 8. Testing & Quality Assurance
+  { name: "pytest", type: "Testing & Quality Assurance", icon: <GrTest className='w-5 h-5'/> },
+
+  // 9. MLOps & Data Engineering
+  { name: "Apache Airflow", type: "MLOps & Data Engineering", icon: <SiApacheairflow className='w-5 h-5'/> },
+  { name: "MLflow", type: "MLOps & Data Engineering", icon: <SiMlflow className='w-5 h-5'/> },
+
+  // 10. Monitoring & Observability
+  { name: "Prometheus", type: "Monitoring & Observability", icon: <SiPrometheus className='w-5 h-5'/> },
+  { name: "Grafana", type: "Monitoring & Observability", icon: <SiGrafana className='w-5 h-5'/> },
+  { name: "OpenTelemetry", type: "Monitoring & Observability", icon: <SiOpentelemetry className='w-5 h-5'/> },
+
+  // 11. Methodologies
+  { name: "Agile / Kanban", type: "Methodologies", icon: <DiScrum className='w-5 h-5'/> },
+];
 
   const arrayType=[t('skills.all'),...new Set(skillsData.map((skill)=>skill.type))]
   const filtredSkills=type===t('skills.all')?skillsData:skillsData.filter((skill)=>skill.type===type);

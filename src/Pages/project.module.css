@@ -1,0 +1,30 @@
+.containerFluid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.horizGalleryWrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.horizGalleryStrip {
+  display: flex;
+
+  gap: 24px;
+
+  width: max-content;
+
+  padding-inline: 24px;
+
+  will-change: transform;
+}
+
+.projectWrap {
+  flex: 0 0 auto;
+
+  width: min(360px, 85vw);
+
+  overflow: hidden;
+}

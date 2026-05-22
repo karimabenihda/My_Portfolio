@@ -4,12 +4,14 @@ import Navbar from './Pages/Navbar';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
-import Projects from './Pages/Projects';
+import Project from './Pages/Projects';
 import Skills from './Pages/Skills';
 import Spinner from './Pages/Spinner.jsx';
 import './App.css';
 import Services from './Pages/Services.jsx';
 import Particles from './Components/Particles.jsx';
+import Dock from  "./Pages/ScrollMac.jsx"
+import DotField from './Components/DotField.jsx'
 
 function App() {
   const [countdown, setCountdown] = useState(4);
@@ -21,44 +23,62 @@ function App() {
     }
   }, [countdown]);
 
-  return countdown > 0 ? (
-    <Spinner countdown={countdown} />
-  ) : (
-    <>
-      {/* Background particles */}
-      <div style={{
-        position: 'fixed',
+   return countdown > 0 ? (
+  <Spinner countdown={countdown} />
+) : (
+  <>
+  {/* <Navbar/> */}
+  <div 
+  //  className='bg-[url("https://assets.prebuiltui.com/images/components/hero-section/hero-background-image.png")] bg-cover relative min-h-screen w-full justify-center overflow-hidden scroll-loop-container' 
+
+      style={{
+        position: "fixed",
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
         zIndex: -3,
-        pointerEvents: 'none'
-      }}>
-        <Particles
-          particleColors={['#ffffff', '#ffffff']}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
+        pointerEvents: "none",
+      }}
+    >
+      {/* <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover
+      /> */}
+      {/* <div className="absolute inset-0 z-0 pointer-events-none"> */}
+      <DotField
+        dotRadius={1.5}
+        dotSpacing={14}
+        bulgeStrength={67}
+        glowRadius={160}
+        sparkle={false}
+        waveAmplitude={0}
+        cursorRadius={500}
+        cursorForce={0.1}
+        bulgeOnly
+        gradientFrom="#7f5af0"
+        gradientTo="#B497CF"
+        glowColor="#120F17"
+      />
+    {/* </div> */}
+    </div>
 
-      {/* Main content */}
-      <Navbar />
-      <div className="!space-y-40">
-        <Element name="home"><Home /></Element>
-        <Element name="about"><About /></Element>
-        <Element name="services"><Services /></Element>
-        <Element name="skills"><Skills /></Element>
-        <Element name="projects"><Projects /></Element>
-        <Element name="contact"><Contact /></Element>
-      </div>
-    </>
-  );
+    <Dock />
+
+    <div className="!space-y-40">
+      <Element name="home"><Home /></Element>
+      <Element name="about"><About /></Element>
+      <Element name="services"><Services /></Element>
+      <Element name="skills"><Skills /></Element>
+      <Element name="project"><Project /></Element>
+      <Element name="contact"><Contact /></Element>
+    </div>
+  </>
+);
 }
 
 export default App;

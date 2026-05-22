@@ -15,29 +15,61 @@ function About() {
   console.log('Animation completed!');
 };
 const items = [
+   {
+          date: "April 2026 – May 2026",
+          title: "E-commerce plateforme : Freelance",
+          company: " DISIS MAROC",
+          description: "Redesigned an e-commerce platform for electronic and IT equipment, adding features and improving UX and performance.",
+          skills: ["Laravel Blade", "Bootstrap", "Mysql"],
+          icon:<Briefcase/>
+        }, 
+   {
+          date: "March 2026 – April 2026",
+          title:"International Student Guidance Platform : Freelance" ,
+          company: "ZHacademy",
+          description: "Contributed as a front-end developer to Ventory, a high-performance SaaS platform, by developing responsive and efficient user interfaces using Next.js and Tailwind CSS",
+          skills: ["Nextjs","Type Script", "TailwindCss" ],
+          icon:<Briefcase/>
+        }, 
+   {
+          date: "Sep 2025 - March 2026",
+          title: "Certification in Artificial Intelligenceb",
+          company: "Simplon Maghre",
+          description: "An intensive, project-driven AI bootcamp covering Machine Learning, Deep Learning, full-stack integration, and agile soft skills through bi-weekly project presentations.",
+          skills: ["Machine Learning", "Deep Learning", "NLP","AI Services Integration","Azure Cloud"],
+          icon:<GraduationCap/>
+        }, 
+   {
+          date: "July 2025 – September 2025",
+          title: "Cash-on-Delivery Sales Management Platform at : Intern",
+          company: "technopeck.com",
+          description: "Contributed as a front-end developer to a Cash-on-Delivery Sales Management Platform by developing a responsive and secure landing page in Laravel Blade, enhancing usability and improving user engagement.",
+          skills: ["React", "TailwindCss", "Laravel"],
+          icon:<Briefcase/>
+        }, 
   {
-          date: "2025",
-          title: t("about.t1"),
+          date: "March 2025 – May 2025",
+          title:" Arabic and Quran Teaching Platform : Intern" ,
           company: "DeveloppeurInformatique.ma",
-          description: t("about.p1"),
-          skills: ["React", "tailwind", "Postgress", "Formik"],
+          description: "Developed modern, responsive user interfaces as a front-end developer using React and Tailwind CSS, enhancing user experience",
+          skills: ["React", "TailwindCss", "Postgress", "Formik"],
           icon:<Briefcase/>
         },      
         {
-          date: "2023 - 2025",
+          date: "Sep 2023 - June 2025",
           title: t("about.t2"),
           company: "ISTA Ait Melloul",
           description: t("about.p2"),
-          skills: ["React", "Laravel", "JavaScript", "php","Mysql","Mongodb"],
+          skills: ["Frontend Developpement", "Backend Developpement", "UML", "SGBD"],
           icon:<GraduationCap/>
         },
-        {
-          date: "2022 - 2023",
-          title: t("about.t3"),
-          company: t("about.company"),
-          description:t("about.p3"),
-          icon:<GraduationCap/>
-        }
+        // {
+        //   date: "2022 - 2023",
+        //   title: t("about.t3"),
+        //   company: t("about.company"),
+        //   description:t("about.p3"),
+        //   icon:<GraduationCap/>
+        // }
       ];
 
     const [inView, setInView] = useState(false);
@@ -165,45 +197,120 @@ const age = calcul_age("2004-06-20");
 
 
       </div>
-      <div className="sec2 md:w-2/3 border rounded-2xl !border-[#222] w-full">
-<section className="timeline-items !p-6">
-          {items.map((item, index) => (
-             <AnimatedContent
-  distance={150}
-  direction="vertical"
-  reverse={false}
-  config={{ tension: 80, friction: 20 }}
-  initialOpacity={0.2}
-  animateOpacity
-  scale={1.1}
-  threshold={0.2}>
-            <div key={index} className="timeline-item flex items-start !mb-2 relative">
-            <div className="timeline-dot z-2 bg-indigo-400 !p-0.5 rounded-full absolute  -left-1.5">
-            {item.icon}
-            </div>
-              <div className="!ml-6 w-full ">
-                <div className="timeline-date !text-sm !text-gray-400 !mb-2">{item.date}</div>
-                <div className="bg-[#18181b] border border-indigo-400 !p-5 rounded-lg shadow-lg">
-                  <h1 className="text-xl font-bold">{item.title}</h1>
-                  {item.company && <p className="!text-indigo-400 text-sm">{item.company}</p>}
-                  <p className="!mt-2 text-gray-300 text-sm">{item.description}</p>
-                  {item.skills && (
-                    <div className="!mt-2 flex flex-wrap gap-2">
-                      {item.skills.map((skill, i) => (
-                        <span key={i} className="text-xs bg-indigo-400 !px-2 !py-0.5 rounded">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
+    <div className="sec2 md:w-2/3 border rounded-2xl !border-[#222] w-full">
+      <section className="timeline-items !p-6">
+        {items.map((item, index) => (
+          <AnimatedContent
+            key={index}
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
+            <div className="timeline-item flex items-start !mb-8 relative">
+              {/* Timeline Dot */}
+              <div className="timeline-dot z-10 bg-indigo-500 !p-1 rounded-full absolute -left-1.5 top-1.5 shadow-[0_0_10px_rgba(99,102,241,0.5)]">
+                {item.icon}
               </div>
-              <div className="absolute left-1.5 h-full w-0.5 bg-gray-600"></div>
+
+              <div className="!ml-6 w-full">
+                {/* 1. Date (Kept Placement) */}
+                <div className="timeline-date !text-sm !text-gray-400 !mb-3 font-medium tracking-wide">
+                  {item.date}
+                </div>
+
+                <header className="max-w-3xl !mx-auto relative z-10 !px-2">
+                  <AnimatedContent
+                    distance={150}
+                    direction="vertical"
+                    reverse={false}
+                    config={{ tension: 80, friction: 20 }}
+                    initialOpacity={0.2}
+                    animateOpacity
+                    scale={1.1}
+                    threshold={0.2}
+                  >
+                    {/* Mac Terminal Header */}
+                    <div className="bg-[#181824] rounded-t-xl !p-2.5 flex items-center border-b border-[#11111b] relative">
+  {/* Div 1: Window Controls - Changed from 'absolute' to normal layout flow with a right margin */}
+              <div className="flex gap-1.5 mr-4 shrink-0">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] border border-[#e0443e]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] border border-[#dea123]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f] border border-[#1aab29]" />
+              </div>
+
+              {/* Div 2: Center Title - Uses pr-[54px] to perfectly offset the buttons so it stays exactly dead-center */}
+              <div className="text-[11px] font-mono text-gray-400 w-full text-center pr-[20px] select-none truncate">
+                karimabenihda — zsh — {item.company}
+              </div>
+            </div>
+
+                    {/* Mac Terminal Body */}
+                    <div className="bg-[#0f0f16] !p-4 rounded-b-xl shadow-2xl border border-white/[0.03] font-mono selection:bg-indigo-500/30">
+                      {/* Shell Prompt Line */}
+                      <div className="flex items-center flex-wrap gap-x-2 text-xs md:text-sm !mb-3">
+                        <span className="text-[#89b4fa]">~/portfolio</span>
+                        <span className="text-gray-500">on</span>
+                        <span className="text-[#a6e3a1] font-semibold">🌿 main</span>
+                        <span className="text-[#f38ba8]">$</span>
+                        <span className="text-white">git log --oneline --graph</span>
+                      </div>
+
+                      {/* Simulated Git Log output utilizing your data elements */}
+                      <div className="space-y-1.5 text-xs md:text-sm">
+                        {/* 2. Title represented as the main commit header (Kept Placement) */}
+                        <div className="flex items-start gap-2 font-semibold">
+                          <span className="text-indigo-400 select-none">*</span>
+                          <span className="text-[#f9e2af]">a1b2c3d</span>
+                          <span className="text-[#74c7ec] text-[11px] bg-[#74c7ec]/10 px-1 rounded border border-[#74c7ec]/20">
+                            HEAD -&gt; origin/main
+                          </span>
+                          <span className="text-gray-100">{item.title}</span>
+                        </div>
+
+                        {/* Git structural connector line */}
+                        <div className="text-gray-600 select-none !ml-0.5">|</div>
+
+                        {/* 3. Description formatted beautifully inside the log details (Kept Placement) */}
+                        <div className="flex items-start gap-2">
+                          <span className="text-gray-600 select-none|">|</span>
+                          <div className="text-gray-400 font-sans leading-relaxed text-sm">
+                            {item.description}
+                          </div>
+                        </div>
+
+                        {/* 4. Skills Badges styled cleanly inside terminal container (Kept Placement) */}
+                        {item.skills && (
+                          <div className="flex items-start gap-2 !mt-3">
+                            <span className="text-gray-600 select-none">|</span>
+                            <div className="flex flex-wrap gap-1.5">
+                              {item.skills.map((skill, i) => (
+                                <span
+                                  key={i}
+                                  className="text-[11px] font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 !px-2 !py-0.5 rounded"
+                                >
+                                  {skill}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </AnimatedContent>
+                </header>
+              </div>
+              {/* Vertical Timeline Track Line */}
+              <div className="absolute left-1.5 top-4 h-[calc(100%+2rem)] w-0.5 bg-gradient-to-b from-indigo-500/50 to-transparent"></div>
             </div>
           </AnimatedContent>
-          ))}
-        </section>
-      </div>
+        ))}
+      </section>
+    </div>
     </div></animated.div>
 </>
   )
