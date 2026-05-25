@@ -13,9 +13,24 @@ import Particles from './Components/Particles.jsx';
 import Dock from  "./Pages/ScrollMac.jsx"
 import DotField from './Components/DotField.jsx'
 import BotWrapper from './bot/BotWrapper.jsx'
+import { Helmet } from 'react-helmet';
 
 
 function App() {
+
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Karima BEN IHDA",
+    "jobTitle": "Fullstack & AI Developer",
+    "url": "https://karimabenihda-portfolio.vercel.app/",
+    "sameAs": [
+      "https://github.com/karimabenihda/",
+      "https://www.linkedin.com/in/karima-ben-ihda-3004ba326/"
+    ]
+  };
+
+
   const [countdown, setCountdown] = useState(4);
 
   useEffect(() => {
@@ -29,6 +44,11 @@ function App() {
   <Spinner countdown={countdown} />
 ) : (
   <>
+  <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
+      </Helmet>
   {/* <Navbar/> */}
   <div 
   //  className='bg-[url("https://assets.prebuiltui.com/images/components/hero-section/hero-background-image.png")] bg-cover relative min-h-screen w-full justify-center overflow-hidden scroll-loop-container' 
