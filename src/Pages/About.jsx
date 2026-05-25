@@ -140,7 +140,7 @@ const age = calcul_age("2004-06-20");
   threshold={0.2}
 >
   
- <div className="rounded-lg !px-4 !py-3 w-[310px] lg:w-full bg-zinc-900 p-4">
+ <div className="rounded-lg !px-4 !py-3 w-[310px] lg:w-full bg-zinc-900 p-3 font-mono">
    <div className="flex  !space-x-2 !space-y-2 ">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -148,7 +148,7 @@ const age = calcul_age("2004-06-20");
   <div className="!ml-4 !-mt-1 text-sm ">about.js</div>
   </div>
 
- <div className="!my-2 group ">
+ <div className="!my-2 group font-mono">
                   <span className="!text-indigo-400 transition-colors duration-300 group-hover:text-indigo-300">const</span>{" "}
                   <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">developer</span> = {"{"}
                 </div>
@@ -167,13 +167,97 @@ const age = calcul_age("2004-06-20");
                 <div className="!ml-4 mb-2 group">
                   <span className="!text-emerald-400 transition-colors duration-300 group-hover:text-emerald-300">skills</span>: [
                 </div>
-                <div className="!ml-8 !mb-2 group !break-words">
-                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"React"</span>,
-                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Node.js"</span>,
-                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Express"</span>,
-                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Laravel"</span>,
-                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Tailwind"</span>,
+<div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                  <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Programming Languages</span> = {"{"}
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Python"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"JavaScript"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"PHP"</span>
+ <div>{"}"}</div><br /><br />
+
+
+
+  <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Frameworks & Technologies</span> = {"{"}
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Nextjs"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Reactjs"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"TailwindCss"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"FastAPI"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Express"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Laravel"</span>
+ <div>{"}"}</div></div><br />
+
+
+
+  <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Libraries & Data Science</span> = {"{"}
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Pandas"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Scikit-learn"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"TensorFlow"</span>
+
+ <div>{"}"}</div></div><br />
+
+<div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">AI / Generative AI</span> = {"{"}
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"LLMs (HF)"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"NLP / RAG"</span>
+ <div>{"}"}</div></div><br />
+
+
+<div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">DataBases</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Postgresql"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Mysql"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"MongoDB"</span>
+ <div>{"}"}</div></div><br />
+
+
+<div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Tools & Platforms</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Git/GitHub"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Postman"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Jupyter / Colab"</span>,
+                  <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Trello / Jira"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"VsCode"</span>
+ <div>{"}"}</div></div><br />
+
+<div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">DevOps & CI/CD</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Docker"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"GitHub Actions"</span>
+ <div>{"}"}</div></div><br />
+ 
+ <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Testing & Quality Assurance</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"pytest"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Fixtures"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Mocking"</span>
+ <div>{"}"}</div></div><br />
+
+ <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">MLOps & Data Engineering</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Apache Airflow"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"MLflow"</span>
+ <div>{"}"}</div></div><br />
+
+ <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Monitoring & Observability</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Prometheus"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Grafana"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"OpenTelemetry"</span>
+ <div>{"}"}</div></div><br />
+
+
+ <div className="!ml-8 !mb-2 flex flex-wrap gap-x-2 whitespace-normal">
+                    <span className="!text-rose-400 transition-colors duration-300 group-hover:text-rose-300">Methodologies</span> = {"{"}
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Agile"</span>,
+                   <span className="!text-yellow-400 transition-colors duration-300 group-hover:text-yellow-300">"Kanban"</span>
+ <div>{"}"}</div></div><br />
+
+
                 </div>
+
+
+
                 <div className="!ml-4 !mb-2">
                   ],
                 </div>
@@ -213,7 +297,7 @@ const age = calcul_age("2004-06-20");
           >
             <div className="timeline-item flex items-start !mb-8 relative">
               {/* Timeline Dot */}
-              <div className="timeline-dot z-10 bg-indigo-500 !p-1 rounded-full absolute -left-1.5 top-1.5 shadow-[0_0_10px_rgba(99,102,241,0.5)]">
+              <div className="timeline-dot z-10 bg-[#7f5af0] !p-1 rounded-full absolute -left-1.5 top-1.5 shadow-[0_0_10px_rgba(99,102,241,0.5)]">
                 {item.icon}
               </div>
 
@@ -250,7 +334,7 @@ const age = calcul_age("2004-06-20");
             </div>
 
                     {/* Mac Terminal Body */}
-                    <div className="bg-[#0f0f16] !p-4 rounded-b-xl shadow-2xl border border-white/[0.03] font-mono selection:bg-indigo-500/30">
+                    <div className="bg-[#0f0f16] !p-4 rounded-b-xl shadow-2xl border border-white/[0.03] font-mono selection:bg-[#7f5af0]/30">
                       {/* Shell Prompt Line */}
                       <div className="flex items-center flex-wrap gap-x-2 text-xs md:text-sm !mb-3">
                         <span className="text-[#89b4fa]">~/portfolio</span>
@@ -291,7 +375,7 @@ const age = calcul_age("2004-06-20");
                               {item.skills.map((skill, i) => (
                                 <span
                                   key={i}
-                                  className="text-[11px] font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 !px-2 !py-0.5 rounded"
+                                  className="text-[11px] font-mono bg-[#7f5af0]/10 text-indigo-300 border border-[#7f5af0]/20 !px-2 !py-0.5 rounded"
                                 >
                                   {skill}
                                 </span>
@@ -305,7 +389,7 @@ const age = calcul_age("2004-06-20");
                 </header>
               </div>
               {/* Vertical Timeline Track Line */}
-              <div className="absolute left-1.5 top-4 h-[calc(100%+2rem)] w-0.5 bg-gradient-to-b from-indigo-500/50 to-transparent"></div>
+              <div className="absolute left-1.5 top-4 h-[calc(100%+2rem)] w-0.5 bg-gradient-to-b from-[#7f5af0]/50 to-transparent"></div>
             </div>
           </AnimatedContent>
         ))}

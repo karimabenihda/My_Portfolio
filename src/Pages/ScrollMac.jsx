@@ -96,8 +96,8 @@ export default function Dock() {
   }));
 
   const socialItems = [
-    { label: 'GitHub', link: 'https://github.com/karimabenihda' },
-    { label: 'LinkedIn', link: 'https://linkedin.com/in/karimabenihda' }
+    { label: 'GitHub', link: 'https://github.com/karimabenihda/' },
+    { label: 'LinkedIn', link: 'https://www.linkedin.com/in/karima-ben-ihda-3004ba326/' }
   ];
 
   return (

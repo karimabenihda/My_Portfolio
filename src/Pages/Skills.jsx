@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import Card from '../Components/Card';
 import { useTranslation } from 'react-i18next';
 import BlurText from '../Components/BlurText';
+import { SiFastapi } from "react-icons/si";
 
 
 
@@ -52,11 +53,11 @@ const skillsData = [
 
   // 2. Frameworks & Technologies
   { name: "Nextjs", type: "Frameworks & Technologies", icon: <RiNextjsLine className='w-5 h-5'/> },
-  { name: "React", type: "Frameworks & Technologies", icon: <FaReact className='w-5 h-5'/> },
-  { name: "Tailwind", type: "Frameworks & Technologies", icon: <RiTailwindCssFill className='w-5 h-5'/> },
+  { name: "Reactjs", type: "Frameworks & Technologies", icon: <FaReact className='w-5 h-5'/> },
+  { name: "TailwindCss", type: "Frameworks & Technologies", icon: <RiTailwindCssFill className='w-5 h-5'/> },
   { name: "Express", type: "Frameworks & Technologies", icon: <SiExpress className='w-5 h-5'/> },
   { name: "Laravel", type: "Frameworks & Technologies", icon: <TbBrandLaravel className='w-5 h-5'/> },
-  { name: "Nodejs", type: "Frameworks & Technologies", icon: <FaNodeJs className='w-5 h-5'/> },
+  { name: "FastAPI", type: "Frameworks & Technologies", icon: <SiFastapi  className='w-5 h-5'/> },
 
   // 3. Libraries & Data Science
   { name: "Pandas", type: "Libraries & Data Science", icon: <SiPandas className='w-5 h-5'/> },

@@ -12,6 +12,8 @@ import Services from './Pages/Services.jsx';
 import Particles from './Components/Particles.jsx';
 import Dock from  "./Pages/ScrollMac.jsx"
 import DotField from './Components/DotField.jsx'
+import BotWrapper from './bot/BotWrapper.jsx'
+
 
 function App() {
   const [countdown, setCountdown] = useState(4);
@@ -68,7 +70,7 @@ function App() {
     </div>
 
     <Dock />
-
+<BotWrapper/>
     <div className="!space-y-40">
       <Element name="home"><Home /></Element>
       <Element name="about"><About /></Element>

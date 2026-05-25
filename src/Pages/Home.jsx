@@ -54,7 +54,7 @@ function Home() {
    <span className="inline-block">
     <RotatingText
       texts={["Full-Stack Developer", "AI Developer", "Data Scientist", "Frontend Developer", "Backend Developer"]}
-      mainClassName="!px-2 md:!px-3 !p-1 rounded-lg text-[#fff] bg-[#7f5af087] font-semibold overflow-hidden inline-block"
+      mainClassName="!px-2 md:!px-3 !p-1 rounded-lg text-[#fff] bg-[#7f5af0] font-semibold overflow-hidden inline-block"
       staggerFrom="last"
       initial={{ y: "100%" }}
       animate={{ y: 0 }}
@@ -145,10 +145,14 @@ function Home() {
               showUserInfo={false}
               enableTilt={true}
               enableMobileTilt={false}
-              behindGlowColor="#7f5af087"
+              // behindGlowColor="#7f5af087"
+              // behindGlowColor="#615FFF"
+              behindGlowColor="#7f5af0"
+
               iconUrl="binary.jpg"
               behindGlowEnabled
               innerGradient="linear-gradient(145deg, #7f5af087 0%, #71C4FF44 100%)"
+              // innerGradient="linear-gradient(145deg, #615FFF 0%, #71C4FF44 100%)"
             />
             
                           {/* <div className="absolute text-white text-center">
